@@ -1,0 +1,8 @@
+denmark	neighbor	germany
+united_states	neighbor	canada
+united_states	neighbor	mexico
+spain	neighbor	andorra
+spain	neighbor	morocco
+spain	neighbor	gibraltar
+spain	neighbor	portugal
+spain	neighbor	france
