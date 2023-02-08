@@ -13,13 +13,14 @@ from matplotlib import pyplot as plt
 
 
 DEFAULT_DATASET_NAME = "countries_neighb_UsaSpaDen"
+DEFAULT_MODEL = "TransE"
 
 
 def main(dataset_name):
 
-    # remove old embeddings
-    if os.path.exists(f"models/{dataset_name}_2Dim"):
-        shutil.rmtree(f"models/{dataset_name}_2Dim")
+    # remove old npy embeddings
+    if os.path.exists(f"models/{dataset_name}_{DEFAULT_MODEL}"):
+        shutil.rmtree(f"models/{dataset_name}_{DEFAULT_MODEL}")
 
     # load data
     df = pd.read_csv(f"data/{dataset_name}/train.txt", sep="\t", header=None)
@@ -27,14 +28,14 @@ def main(dataset_name):
     # run the KGE training in a separate subprocess
     cmd = ["python", "-u", "codes/run.py",
            "--do_train", "--do_valid", "--do_test",
-           "--data_path", "data/countries_S1",
-           "--model", "TransE",
-           "--valid_steps", "100",
-           "--save_checkpoint_steps", "10",
+           "--data_path", f"data/{dataset_name}",
+           "--model", DEFAULT_MODEL,
+           "--valid_steps", "50",
+           "--save_checkpoint_steps", "1",
            "-n", "2", "-b", "8", "-d", "2",
            "-g", "2.0", "-a", "1.0", "-adv",
-           "-lr", "0.02", "--max_steps", "1000",
-           "-save", f"models/{dataset_name}_2Dim", "--test_batch_size", "8"]
+           "-lr", "0.1", "--max_steps", "250",
+           "-save", f"models/{dataset_name}_{DEFAULT_MODEL}", "--test_batch_size", "8"]
     # subprocess.run(cmd)
     pid = subprocess.Popen(cmd, shell=True, stdin=None, stdout=None, stderr=None, close_fds=True)
 
@@ -52,7 +53,7 @@ def main(dataset_name):
     while pid.poll() is None:  # while subprocess is still alive
 
         # locate embedding files and then load latest embedding (.npy)
-        embedding_history_paths = sorted(list(pathlib.Path(f"models/{dataset_name}_2Dim").glob("entity*.npy")))
+        embedding_history_paths = sorted(list(pathlib.Path(f"models/{dataset_name}_{DEFAULT_MODEL}").glob("entity*.npy")))
         if len(embedding_history_paths) > count:
             emb = np.load(embedding_history_paths[-1], allow_pickle=True)
 
@@ -118,7 +119,7 @@ def main(dataset_name):
             """"""
 
             fig.canvas.draw_idle()
-            plt.pause(1)  # need some time to capture events like mouse interactions
+            plt.pause(0.1)  # need some time to capture events like mouse interactions
 
             count = len(embedding_history_paths)
 
