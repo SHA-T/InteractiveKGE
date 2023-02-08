@@ -10,7 +10,7 @@ The exact code changes are documented in `scripts.ipynb`.
 
 Additionally to that the module `interact.py` was created for the purpose of this extended repo to visualize embeddings and add new entities - both live during training.
 
-## 2. How it works
+## 2. How To Use
 
 The Interactive KGE can be executed on any of the datasets in the `data/` directory. 
 To choose the dataset, pass the name of a sub-folder under the `data/` directory as the first command line argument.
@@ -24,10 +24,11 @@ This dataset is a simplified version of the `countries_S1` dataset, that is filt
 You can add your own datasets and run the Interactive KGE on them. Therefore, add your datasets to the `data/` directory, 
 but keep the structure and format same as the other datasets.
 
-**Implemented** Features: 
-- Running the Knowledge Graph Embedding in a sub process
-- Tracking and Plotting the embeddings in the main process
+**Implemented** Features:
+- [x] Free dataset selection
+- [x] Running the Knowledge Graph Embedding in a sub process
+- [x] Tracking and Plotting the embeddings in the main process
 
-**In Progress** Features: 
-- By clicking into the embedding space, you pause the training and create a new entity at the clicked coordinates. Choose the relations of the new entity in the dropdown menu.
-- Change training hyperparameters for the Knowledge Graph Embedding (Currently they can be changed by modifying the `interact.py` module)
+**In Progress** Features:
+- [ ] By clicking into the embedding space, you pause the training and create a new entity at the clicked coordinates. Choose the relations of the new entity in the dropdown menu.
+- [ ] Change training hyperparameters for the Knowledge Graph Embedding (Currently they can be changed by modifying the `interact.py` module)
