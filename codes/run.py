@@ -29,7 +29,8 @@ def parse_args(args=None):
     )
 
     parser.add_argument('--cuda', action='store_true', help='use GPU')
-    
+
+    parser.add_argument('--do_pretrain', action='store_true')
     parser.add_argument('--do_train', action='store_true')
     parser.add_argument('--do_valid', action='store_true')
     parser.add_argument('--do_test', action='store_true')
@@ -209,7 +210,10 @@ def main(args):
     logging.info('Data Path: %s' % args.data_path)
     logging.info('#entity: %d' % nentity)
     logging.info('#relation: %d' % nrelation)
-    
+
+    pretrain_triples = read_triple(os.path.join(args.data_path, 'pretrain.txt'), entity2id, relation2id)
+    if args.do_pretrain:
+        logging.info('#train: %d' % len(pretrain_triples))
     train_triples = read_triple(os.path.join(args.data_path, 'train.txt'), entity2id, relation2id)
     logging.info('#train: %d' % len(train_triples))
     valid_triples = read_triple(os.path.join(args.data_path, 'valid.txt'), entity2id, relation2id)
@@ -236,7 +240,27 @@ def main(args):
 
     if args.cuda:
         kge_model = kge_model.cuda()
-    
+
+    if args.do_pretrain:
+        # Set pretraining dataloader iterator with the pretrain-mock-data
+        pretrain_dataloader_head = DataLoader(
+            TrainDataset(pretrain_triples, nentity, nrelation, args.negative_sample_size, 'head-batch'),
+            batch_size=args.batch_size,
+            shuffle=True,
+            num_workers=max(1, args.cpu_num // 2),
+            collate_fn=TrainDataset.collate_fn
+        )
+
+        pretrain_dataloader_tail = DataLoader(
+            TrainDataset(pretrain_triples, nentity, nrelation, args.negative_sample_size, 'tail-batch'),
+            batch_size=args.batch_size,
+            shuffle=True,
+            num_workers=max(1, args.cpu_num // 2),
+            collate_fn=TrainDataset.collate_fn
+        )
+
+        pretrain_iterator = BidirectionalOneShotIterator(pretrain_dataloader_head, pretrain_dataloader_tail)
+
     if args.do_train:
         # Set training dataloader iterator
         train_dataloader_head = DataLoader(
@@ -296,12 +320,39 @@ def main(args):
     
     # Set valid dataloader as it would be evaluated during training
     
+    if args.do_pretrain:
+        logging.info('____________________')
+        logging.info('Start Pretraining...')
+
+        training_logs = []
+
+        # Pretraining Loop
+        for step in range(init_step, args.max_steps//2):
+            log = kge_model.train_step(kge_model, optimizer, pretrain_iterator, args)
+
+            training_logs.append(log)
+
+            if step % args.log_steps == 0:
+                metrics = {}
+                for metric in training_logs[0].keys():
+                    metrics[metric] = sum([log[metric] for log in training_logs])/len(training_logs)
+                log_metrics('Training average', step, metrics)
+                training_logs = []
+
+        save_variable_list = {
+            'step': step,
+            'current_learning_rate': current_learning_rate
+        }
+        save_model(kge_model, optimizer, save_variable_list, args)
+
     if args.do_train:
+        logging.info('____________________')
+        logging.info('Start Training...')
         logging.info('learning_rate = %d' % current_learning_rate)
 
         training_logs = []
         
-        #Training Loop
+        # Training Loop
         for step in range(init_step, args.max_steps):
             
             log = kge_model.train_step(kge_model, optimizer, train_iterator, args)
@@ -345,16 +396,19 @@ def main(args):
         save_model(kge_model, optimizer, save_variable_list, args)
         
     if args.do_valid:
+        logging.info('____________________')
         logging.info('Evaluating on Valid Dataset...')
         metrics = kge_model.test_step(kge_model, valid_triples, all_true_triples, args)
         log_metrics('Valid', step, metrics)
     
     if args.do_test:
+        logging.info('____________________')
         logging.info('Evaluating on Test Dataset...')
         metrics = kge_model.test_step(kge_model, test_triples, all_true_triples, args)
         log_metrics('Test', step, metrics)
     
     if args.evaluate_train:
+        logging.info('____________________')
         logging.info('Evaluating on Training Dataset...')
         metrics = kge_model.test_step(kge_model, train_triples, all_true_triples, args)
         log_metrics('Test', step, metrics)
