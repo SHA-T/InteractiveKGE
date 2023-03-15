@@ -319,7 +319,7 @@ def main(args):
         logging.info('adversarial_temperature = %f' % args.adversarial_temperature)
     
     # Set valid dataloader as it would be evaluated during training
-    
+
     if args.do_pretrain:
         logging.info('____________________')
         logging.info('Start Pretraining...')
@@ -345,9 +345,9 @@ def main(args):
         }
         save_model(kge_model, optimizer, save_variable_list, args)
 
-    print(kge_model.relation_embedding.shape)
-    print(kge_model.relation_embedding)
-    kge_model.relation_embedding[1].required_grad = False
+        # Freeze embeddings of all pretrained relations
+        # For now the assumption is that all relations except the first are from the mock dataset 'pretrain.txt'
+        kge_model.relation_embedding[1:].required_grad = False
 
     if args.do_train:
         logging.info('____________________')
