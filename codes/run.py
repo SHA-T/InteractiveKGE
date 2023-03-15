@@ -327,7 +327,7 @@ def main(args):
         training_logs = []
 
         # Pretraining Loop
-        for step in range(init_step, args.max_steps//2):
+        for step in range(init_step, args.max_steps//10):
             log = kge_model.train_step(kge_model, optimizer, pretrain_iterator, args)
 
             training_logs.append(log)
@@ -344,6 +344,8 @@ def main(args):
             'current_learning_rate': current_learning_rate
         }
         save_model(kge_model, optimizer, save_variable_list, args)
+
+    kge_model.relation_embedding[1].required_grad = False
 
     if args.do_train:
         logging.info('____________________')
