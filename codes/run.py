@@ -345,6 +345,8 @@ def main(args):
         }
         save_model(kge_model, optimizer, save_variable_list, args)
 
+    print(kge_model.relation_embedding.shape)
+    print(kge_model.relation_embedding)
     kge_model.relation_embedding[1].required_grad = False
 
     if args.do_train:
