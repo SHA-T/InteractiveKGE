@@ -8,7 +8,7 @@ For more information on how the actual embedding works click the link.
 Some changes were made to the existing code of [KnowledgeGraphEmbedding](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding). These are fixing seeds and modifying some code parts such that it is possible to store embeddings during the training. 
 The exact code changes are documented in `scripts.ipynb`.
 
-Additionally to that the module `interact.py` was created for the purpose of this extended repo to visualize embeddings and add new entities - both live during training.
+Additionally to that the module `interact.py` was created for the main purpose of this extended repo to visualize embeddings and add new entities - both live during training.
 
 Also, the `run.py` module was changed to allow for a new optional feature: **Pretraining**.
 Pretraining allows for the training of the semantics of new relations with the help of a mock dataset that should be saved as _pretrain.txt_ under the corresponding data directory. 
