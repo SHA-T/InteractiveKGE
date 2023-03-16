@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Fixed issue with freezing embeddings">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LNCzWkU7YMFJjcmZoykCD8D3mc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/Yamanishi" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\countries_neighbors_UsaEspDen" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv\Yamanishi_RotatE" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.local_script_1">
+    <configuration name="interact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interact.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="local_script_1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local_script_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.local_script_1" />
+        <item itemvalue="Python.interact" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="" />
+      <created>1675702422521</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675702422521</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Added more functionalities (e.g. cmd line args), cleaned the code, updated README.md">
+      <created>1675881548647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675881548647</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added more functionalities (e.g. cmd line args), cleaned the code, updated README.md">
+      <created>1675882047173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675882047173</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated README.md">
+      <created>1675883772963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675883772963</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Minor improvements + added Yamanishi dataset + added folder to save extra embeddings as tsv besides the embeddings that are saved in 'models' folder">
+      <created>1675893390995</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675893390995</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated entities_labels file of Yamanishi dataset">
+      <created>1675895191363</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675895191363</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated entities_labels file of Yamanishi dataset (protein = 0, drug = 1)">
+      <created>1675901246717</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675901246717</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Created option to do Pretraining (--do_pretrain) to learn semantics for new relations/entities before actual training.">
+      <created>1678658559432</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678658559432</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added relations.dict to Yamanishi data">
+      <created>1678660262593</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678660262593</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed a bug">
+      <created>1678660398390</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678660398390</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fixed tab seperator in pretrain.txt">
+      <created>1678661028753</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678661028753</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updated entities.dict &amp; relations.dict">
+      <created>1678661364656</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678661364656</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updated entities.dict">
+      <created>1678662957528</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678662957528</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added feature to fix pretrained embeddings">
+      <created>1678892470783</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678892470783</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Test">
+      <created>1678892656496</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1678892656496</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed issue with freezing embeddings">
+      <created>1678921920746</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678921920746</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added more functionalities (e.g. cmd line args), cleaned the code, updated README.md" />
+    <MESSAGE value="Updated README.md" />
+    <MESSAGE value="Minor improvements + added Yamanishi dataset + added folder to save extra embeddings as tsv besides the embeddings that are saved in 'models' folder" />
+    <MESSAGE value="Updated entities_labels file of Yamanishi dataset" />
+    <MESSAGE value="Updated entities_labels file of Yamanishi dataset (protein = 0, drug = 1)" />
+    <MESSAGE value="Created option to do Pretraining (--do_pretrain) to learn semantics for new relations/entities before actual training." />
+    <MESSAGE value="Added relations.dict to Yamanishi data" />
+    <MESSAGE value="Fixed a bug" />
+    <MESSAGE value="Fixed tab seperator in pretrain.txt" />
+    <MESSAGE value="Updated entities.dict &amp; relations.dict" />
+    <MESSAGE value="Updated entities.dict" />
+    <MESSAGE value="Added feature to fix pretrained embeddings" />
+    <MESSAGE value="Test" />
+    <MESSAGE value="Fixed issue with freezing embeddings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with freezing embeddings" />
+  </component>
+</project>
