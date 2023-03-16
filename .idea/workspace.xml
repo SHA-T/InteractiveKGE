@@ -2,8 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated README.md">
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/valid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local_script_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_entities_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/entities_labels.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/pretrain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/pretrain.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/relations.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/relations.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/train.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/valid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/valid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/create_entities_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_entities_dict.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +83,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/Yamanishi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv" />
@@ -247,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678932321096</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated utility scripts">
+      <created>1678933248970</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1678933248970</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated README.md">
+      <created>1678934916068</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1678934916068</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +333,7 @@
     <MESSAGE value="Added feature to fix pretrained embeddings" />
     <MESSAGE value="Test" />
     <MESSAGE value="Fixed issue with freezing embeddings" />
+    <MESSAGE value="Updated utility scripts" />
     <MESSAGE value="Updated README.md" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>

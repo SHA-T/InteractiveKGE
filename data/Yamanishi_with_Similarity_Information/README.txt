@@ -1,5 +1,0 @@
-This "Yamanishi_with_Similarity_Information" directory differs from the regular Yamanishi data in the "Yamanishi" directory as follows:
-
-- Similarity information (source: http://web.kuicr.kyoto-u.ac.jp/supp/yoshi/drugtarget/) between the entities was added to the train set (train.txt). Similar entities are connected through the newly introduced relation "sameAs".
-
-To learn the semantics of the new relation "sameAs", the model can be pre-trained on the "pretrain.txt" mock data.
