@@ -48,6 +48,8 @@ This dataset is a simplified version of the `countries_S1` dataset, that is filt
 You can add your own datasets and run the Interactive KGE on them. Therefore, add your datasets to the `data/` directory, 
 but keep the structure and format same as the other datasets.
 
+---
+
 **Implemented** Features:
 - [x] Free dataset selection
 - [x] Running the Knowledge Graph Embedding in a sub process
