@@ -1,51 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated README.md">
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_85/valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_60/valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_70/valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_85/valid.txt" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added more Yamanishi datasets with different thresholds for integrated Similarity Information">
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV/entities_labels.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_INV_with_Similarity_Information_for_Drugs_only_85/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/create_inv_triples.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_70/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/entities_labels.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/pretrain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/pretrain.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/relations.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/relations.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information/valid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_60/valid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/create_entities_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_entities_dict.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +69,7 @@
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv\Yamanishi_RotatE" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_entities_dict (1)">
+  <component name="RunManager" selected="Python.create_inv_triples">
     <configuration name="create_entities_dict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,6 +112,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="create_inv_triples" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/create_inv_triples.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="interact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_inv_triples" />
         <item itemvalue="Python.create_entities_dict (1)" />
         <item itemvalue="Python.create_entities_dict" />
         <item itemvalue="Python.interact" />
@@ -305,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678934916068</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added more Yamanishi datasets with different thresholds for integrated Similarity Information">
+      <created>1678989723062</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1678989723062</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,6 +335,7 @@
     <MESSAGE value="Fixed issue with freezing embeddings" />
     <MESSAGE value="Updated utility scripts" />
     <MESSAGE value="Updated README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
+    <MESSAGE value="Added more Yamanishi datasets with different thresholds for integrated Similarity Information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more Yamanishi datasets with different thresholds for integrated Similarity Information" />
   </component>
 </project>
