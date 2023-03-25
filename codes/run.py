@@ -350,7 +350,7 @@ def main(args):
 
         # Freeze embeddings of all pretrained relations
         # For now the assumption is that all relations except the first are from the mock dataset 'pretrain.txt'
-        kge_model.relation_embedding[1:].detach_()
+        kge_model.relation_embedding[1:].detach()
 
     #################### Test
     print("\nrelation embeddings after pretraining:\n", kge_model.relation_embedding, "\n")
