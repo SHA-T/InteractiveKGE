@@ -320,6 +320,9 @@ def main(args):
     
     # Set valid dataloader as it would be evaluated during training
 
+    #################### Test
+    print("\nrelation embeddings before pretraining:\n", kge_model.relation_embedding, "\n")
+
     if args.do_pretrain:
         logging.info('____________________')
         logging.info('Start Pretraining...')
@@ -347,7 +350,10 @@ def main(args):
 
         # Freeze embeddings of all pretrained relations
         # For now the assumption is that all relations except the first are from the mock dataset 'pretrain.txt'
-        kge_model.relation_embedding[1:].required_grad = False
+        kge_model.relation_embedding[1:].requires_grad = False
+
+    #################### Test
+    print("\nrelation embeddings after pretraining:\n", kge_model.relation_embedding, "\n")
 
     if args.do_train:
         logging.info('____________________')
@@ -398,7 +404,10 @@ def main(args):
             'warm_up_steps': warm_up_steps
         }
         save_model(kge_model, optimizer, save_variable_list, args)
-        
+
+    #################### Test
+    print("\nrelation embeddings after regular training:\n", kge_model.relation_embedding, "\n")
+
     if args.do_valid:
         logging.info('____________________')
         logging.info('Evaluating on Valid Dataset...')
