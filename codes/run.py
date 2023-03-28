@@ -320,9 +320,6 @@ def main(args):
     
     # Set valid dataloader as it would be evaluated during training
 
-    #################### Test
-    print("\nrelation embeddings before pretraining:\n", kge_model.relation_embedding, "\n")
-
     if args.do_pretrain:
         logging.info('____________________')
         logging.info('Start Pretraining...')
@@ -331,7 +328,7 @@ def main(args):
 
         # Pretraining Loop
         for step in range(init_step, args.max_steps//10):
-            log = kge_model.train_step(kge_model, optimizer, pretrain_iterator, args)
+            log = kge_model.train_step(kge_model, optimizer, pretrain_iterator, args, pretrain_finished=False)
 
             training_logs.append(log)
 
@@ -348,14 +345,6 @@ def main(args):
         }
         save_model(kge_model, optimizer, save_variable_list, args)
 
-        # Freeze embeddings of all pretrained relations
-        # For now the assumption is that all relations except the first are from the mock dataset 'pretrain.txt'
-        kge_model.relation_embedding[1:].detach()
-        kge_model.relation_embedding[1:].requires_grad = False
-
-    #################### Test
-    print("\nrelation embeddings after pretraining:\n", kge_model.relation_embedding, "\n")
-
     if args.do_train:
         logging.info('____________________')
         logging.info('Start Training...')
@@ -366,7 +355,7 @@ def main(args):
         # Training Loop
         for step in range(init_step, args.max_steps):
             
-            log = kge_model.train_step(kge_model, optimizer, train_iterator, args)
+            log = kge_model.train_step(kge_model, optimizer, train_iterator, args, pretrain_finished=True)
             
             training_logs.append(log)
             
@@ -406,9 +395,6 @@ def main(args):
         }
         save_model(kge_model, optimizer, save_variable_list, args)
 
-    #################### Test
-    print("\nrelation embeddings after regular training:\n", kge_model.relation_embedding, "\n")
-
     if args.do_valid:
         logging.info('____________________')
         logging.info('Evaluating on Valid Dataset...')
@@ -427,5 +413,6 @@ def main(args):
         metrics = kge_model.test_step(kge_model, train_triples, all_true_triples, args)
         log_metrics('Test', step, metrics)
         
+
 if __name__ == '__main__':
     main(parse_args())
