@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Fixed bug with freezing pretrained embeddings">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Fixed bug with freezing pretrained embeddings (finally)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679771729240</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Fixed bug with freezing pretrained embeddings (finally)">
+      <created>1680021815530</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1680021815530</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,6 +381,7 @@
     <MESSAGE value="Created inverse Yamanishi datasets" />
     <MESSAGE value="Updated README.md &amp; relations.dict for inverse datasets" />
     <MESSAGE value="Fixed bug with freezing pretrained embeddings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with freezing pretrained embeddings" />
+    <MESSAGE value="Fixed bug with freezing pretrained embeddings (finally)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with freezing pretrained embeddings (finally)" />
   </component>
 </project>

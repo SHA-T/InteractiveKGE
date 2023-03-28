@@ -10,7 +10,7 @@ The exact code changes are documented in `scripts.ipynb`.
 
 Additionally to that the module `interact.py` was created for the main purpose of this extended repo to visualize embeddings and add new entities - both live during training.
 
-Also, the `run.py` module was changed to allow for a new optional feature: **Pretraining**.
+Also, the `run.py` and `model.py` modules were changed to allow for a new optional feature: **Pretraining**.
 Pretraining allows for the training of the semantics of new relations with the help of a mock dataset that should be saved as _pretrain.txt_ under the corresponding data directory. 
 An example for such a file can be looked up in the _data/Yamanishi_with_Similarity_Information_ directory. 
 While the regular training phase uses the data in _train.txt_, pretraining precedes regular training and only uses the data in _pretrain.txt_. 
