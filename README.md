@@ -43,6 +43,8 @@ To choose the dataset, pass the name of a sub-folder under the _data/_ directory
 python interact.py countries_neighb_UsaSpaDen
 ```
 
+![](https://github.com/SHA-T/InteractiveKGE/blob/main/Live_KGE_Visualization.gif)
+
 If you do not pass any argument, by default the `countries_neighb_UsaSpaDen` dataset will be chosen. 
 This dataset is a simplified version of the `countries_S1` dataset, that is filtered for the countries USA, Spain and Denmark and all of their neighbors.
 You can add your own datasets and run the Interactive KGE on them. Therefore, add your datasets to the `data/` directory, 
