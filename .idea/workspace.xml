@@ -2,10 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated README.md">
-      <change afterPath="$PROJECT_DIR$/Live_KGE_Visualization.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/valid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_commands.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +82,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information_Top1percent" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\countries_neighbors_UsaEspDen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\util" />
@@ -356,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680022158053</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Updated README.md">
+      <created>1680455555752</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1680455555752</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
