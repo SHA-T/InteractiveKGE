@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated datasets (Old ones will be deleted soon)">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated entities.dict of new datasets">
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/valid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top1percent/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top2percent/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top3percent/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top1percent/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top2percent/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top3percent/entities.dict" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680630572402</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Updated entities.dict of new datasets">
+      <created>1680632213955</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1680632213955</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,6 +431,7 @@
     <MESSAGE value="Fixed bug with freezing pretrained embeddings (finally)" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Updated datasets (Old ones will be deleted soon)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated datasets (Old ones will be deleted soon)" />
+    <MESSAGE value="Updated entities.dict of new datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated entities.dict of new datasets" />
   </component>
 </project>
