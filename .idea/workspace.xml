@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated entities.dict of new datasets">
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.1percent/valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_Top0.5percent/valid.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi_with_Similarity_Information_for_Drugs_only_Top0.5percent/valid.txt" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added some more datasets and removed old datasets">
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.1percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.5percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top1percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top2percent/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/valid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/create_entities_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_entities_dict.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +85,18 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\YamanishiEnzymes_with_Similarity_Information_Top0.1percent" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\YamanishiEnzymes" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information_Top1percent" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\YamanishiEnzymes" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\util" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv\Yamanishi_RotatE" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_inv_triples">
+  <component name="RunManager" selected="Python.create_entities_dict (1)">
     <configuration name="create_entities_dict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,8 +183,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.create_inv_triples" />
         <item itemvalue="Python.create_entities_dict (1)" />
+        <item itemvalue="Python.create_inv_triples" />
         <item itemvalue="Python.create_entities_dict" />
         <item itemvalue="Python.interact" />
       </list>
@@ -395,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680632213955</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Added some more datasets and removed old datasets">
+      <created>1680782091554</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1680782091554</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,6 +460,7 @@
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Updated datasets (Old ones will be deleted soon)" />
     <MESSAGE value="Updated entities.dict of new datasets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated entities.dict of new datasets" />
+    <MESSAGE value="Added some more datasets and removed old datasets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some more datasets and removed old datasets" />
   </component>
 </project>
