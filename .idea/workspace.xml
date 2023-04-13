@@ -1,23 +1,314 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added Yamanishi enzymes dataset (split threshold = 4)">
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/entities.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/pretrain.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/relations.dict" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/train.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.2percent/valid.txt" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings">
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/original/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/1/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/2/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/3/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/4/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/5/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.05pct/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/2/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/3/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/4/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/5/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/1/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/2/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/3/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/4/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/5/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.2pct/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/1/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/2/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/3/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/4/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/5/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top0.5pct/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/1/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/2/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/3/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/4/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/5/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top1pct/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/1/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/2/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/3/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/4/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/5/pretrain.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_similarity_information_top2pct/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/original/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/original/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/original/5/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/1/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/1/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/1/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/1/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/2/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/2/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/2/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/2/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/3/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/3/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/3/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/3/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/4/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/4/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/4/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/4/valid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/5/entities.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/5/relations.dict" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/5/train.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/original/5/valid.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/pretrain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/pretrain.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/relations.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/relations.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/train.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top3percent/valid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/YamanishiEnzymes_with_Similarity_Information_Top0.05percent/valid.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +345,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\YamanishiEnzymes_with_Similarity_Information_Top0.1percent" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\YamanishiEnzymes" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi_with_Similarity_Information_Top1percent" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\ion_channel" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme\with_similarity_information_top0.05pct\5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\YamanishiEnzymes" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\util" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\embeddings_as_tsv\Yamanishi_RotatE" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\original" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor\original" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\ion_channel\original" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\gpcr\original" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme\original" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_entities_dict (1)">
+  <component name="RunManager" selected="Python.test2">
     <configuration name="create_entities_dict (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -84,27 +377,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/create_entities_dict.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="create_entities_dict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="InteractiveKGE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\tsham\Desktop\Github\InteractiveKGE\util\create_entities_dict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,12 +427,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test2" />
+        <item itemvalue="Python.interact" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.create_entities_dict (1)" />
         <item itemvalue="Python.create_inv_triples" />
-        <item itemvalue="Python.create_entities_dict" />
-        <item itemvalue="Python.interact" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +719,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681234066766</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings">
+      <created>1681246141757</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1681246141757</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,6 +765,7 @@
     <MESSAGE value="Updated entities.dict of new datasets" />
     <MESSAGE value="Added some more datasets and removed old datasets" />
     <MESSAGE value="Added Yamanishi enzymes dataset (split threshold = 4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Yamanishi enzymes dataset (split threshold = 4)" />
+    <MESSAGE value="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings" />
   </component>
 </project>
