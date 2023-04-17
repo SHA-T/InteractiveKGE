@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added datasets that have k folds in a separate directory called data_k_fold/">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Small adjustments &amp; created GIF of updated version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Live_KGE_Visualization.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Live_KGE_Visualization.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/countries_neighb_UsaSpaDen/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries_neighb_UsaSpaDen/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/countries_neighb_UsaSpaDen/relations.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data/countries_neighb_UsaSpaDen/relations.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interact.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/my_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/create_entities_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_entities_dict.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +44,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/codes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\codes" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\ion_channel" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\original" />
@@ -66,7 +62,7 @@
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme\original" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.blub">
+  <component name="RunManager" selected="Python.crop_images_and_create_gif">
     <configuration name="blub" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,7 +84,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="interact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="crop_images_and_create_gif" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -96,11 +92,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Work/Live_KGE_Visualization/images_for_gif_v1" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interact.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\tsham\Desktop\Work\Live_KGE_Visualization\images_for_gif_v1\crop_images_and_create_gif.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -174,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.crop_images_and_create_gif" />
         <item itemvalue="Python.blub" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test3" />
         <item itemvalue="Python.test2" />
-        <item itemvalue="Python.interact" />
       </list>
     </recent_temporary>
   </component>
@@ -436,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681407832738</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes">
+      <created>1681724822110</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681724822110</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,7 +454,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Minor improvements + added Yamanishi dataset + added folder to save extra embeddings as tsv besides the embeddings that are saved in 'models' folder" />
     <MESSAGE value="Updated entities_labels file of Yamanishi dataset" />
     <MESSAGE value="Updated entities_labels file of Yamanishi dataset (protein = 0, drug = 1)" />
     <MESSAGE value="Created option to do Pretraining (--do_pretrain) to learn semantics for new relations/entities before actual training." />
@@ -476,6 +478,7 @@
     <MESSAGE value="Added Yamanishi enzymes dataset (split threshold = 4)" />
     <MESSAGE value="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings" />
     <MESSAGE value="Added datasets that have k folds in a separate directory called data_k_fold/" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added datasets that have k folds in a separate directory called data_k_fold/" />
+    <MESSAGE value="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes" />
   </component>
 </project>

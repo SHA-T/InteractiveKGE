@@ -555,28 +555,30 @@ if __name__ == '__main__':
         p = Process(target=main, args=(args, conn_child))
         p.start()
 
-        # Receive initial embeddings from child process (waits until something comes)
-        emb = conn_parent.recv()
-
-        # Create colors for plot
-        colors = []
-        for i in range(len(emb)):
-            colors.append('#%06X' % randint(0, 0xFFFFFF))
-
         # Create annotations from entity labels
         labels = pd.read_csv(f"{args.data_path}/entities.dict", sep='\t', header=None, names=['idx', 'entity'],
                              index_col=0)
         labels = labels.entity.tolist()
         annotations = len(labels) * [plt.Annotation("", (0, 0))]
 
+        # Create colors for plot
+        colors = []
+        for i in range(len(labels)):
+            colors.append('#%06X' % randint(0, 0xFFFFFF))
+
+        # Receive initial embeddings from child process (waits until something comes)
+        emb = conn_parent.recv()
+
+        # Configure plot
         plt.ion()
         fig = plt.figure(num='InteractiveKGE', figsize=(6.8, 6.8))
         ax = fig.add_subplot(111)
-        title = "(Use the mouse-wheel to zoom in and out. \n" \
-                "Change the embeddings by dragging the points with the left mouse button.)"
+        plt.title("(Use the mouse-wheel to zoom in and out. \n"
+                  "Change the embeddings by dragging the points with the left mouse button.)")
         if args.data_path == "data/countries_neighb_UsaSpaDen":
-            title = "Neighbors of USA, Spain and Denmark by 'countries_S1' dataset\n" + title
-        plt.title(title)
+            plt.suptitle("Neighbors of USA, Spain and Denmark by 'countries_S1' dataset")
+        else:
+            plt.suptitle("InteractiveKGE")
 
         # Set initial limits manually, since ax will be populated with circles
         min_lim, max_lim = np.min(emb), np.max(emb)
@@ -592,9 +594,10 @@ if __name__ == '__main__':
         circles = []
         r1 = (max_lim - min_lim) / 50.0
         r2 = (max_lim - min_lim) / 70.0
-        r3 = (max_lim - min_lim) / 100.0
-        r4 = (max_lim - min_lim) / 120.0
-        r5 = (max_lim - min_lim) / 140.0
+        r3 = (max_lim - min_lim) / 80.0
+        r4 = (max_lim - min_lim) / 100.0
+        r5 = (max_lim - min_lim) / 120.0
+        r6 = (max_lim - min_lim) / 140.0
         for i in range(len(emb)):
             circles.append(patches.Circle(tuple(emb[i]), r1, fc=colors[i], alpha=1.0))
             annotations[i] = ax.annotate(labels[i], (emb[i, 0] + r2, emb[i, 1] + r2))
@@ -613,8 +616,11 @@ if __name__ == '__main__':
         disconnect_zoom = zoom_factory(ax)
         pan_handler = panhandler(fig)
 
+        # FIFO-Ringbuffer for historical plots
+        maxlen = 6
+        q = deque(maxlen=maxlen)
+
         id_xy_old = id_xy
-        q = deque(maxlen=6)
 
         try:
             while p.is_alive():  # while process is still alive
@@ -624,15 +630,15 @@ if __name__ == '__main__':
                     # If RECEIVE (=embedding changed), update historical positions in ringbuffer
                     q.append([])
                     for i in range(len(emb)):
-                        q[-1].append(patches.Circle(tuple(emb[i]), r2, fc=colors[i], alpha=0.6))
+                        q[-1].append(patches.Circle(tuple(emb[i]), r3, fc=colors[i], alpha=0.5))
                         ax.add_patch(q[-1][i])
                         if len(q) > 1:
-                            q[-2][i].set(radius=r3, alpha=0.5)
+                            q[-2][i].set(radius=r4, alpha=0.4)
                             if len(q) > 2:
-                                q[-3][i].set(radius=r4, alpha=0.4)
+                                q[-3][i].set(radius=r5, alpha=0.3)
                                 if len(q) > 3:
-                                    q[-4][i].set(radius=r5, alpha=0.3)
-                                    if len(q) == 6:
+                                    q[-4][i].set(radius=r6, alpha=0.2)
+                                    if len(q) == maxlen:
                                         q[0][i].remove()
                     # RECEIVE updated embeddings from child process
                     emb = conn_parent.recv()

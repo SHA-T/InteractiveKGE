@@ -34,9 +34,9 @@ python -u codes/run.py
     --model TransE 
     --valid_steps 10 
     --save_checkpoint_steps 1 
-    -n 3 -b 8 -d 2 
-    -g 2.0 -a 1.0 -adv 
-    -lr 0.1 --max_steps 200 
+    -n 2 -b 8 -d 2 
+    -g 1.0 -a 1.0 -adv 
+    -lr 0.1 --max_steps 100 
     -save models/countries_neighb_UsaSpaDen_TransE --test_batch_size 8
 ```
 
