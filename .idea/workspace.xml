@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Small adjustments &amp; created GIF of updated version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Live_KGE_Visualization.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Live_KGE_Visualization.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_commands.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681724822110</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Small adjustments &amp; created GIF of updated version">
+      <created>1681769778714</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1681769778715</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,7 +458,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated entities_labels file of Yamanishi dataset" />
     <MESSAGE value="Updated entities_labels file of Yamanishi dataset (protein = 0, drug = 1)" />
     <MESSAGE value="Created option to do Pretraining (--do_pretrain) to learn semantics for new relations/entities before actual training." />
     <MESSAGE value="Added relations.dict to Yamanishi data" />
@@ -479,6 +482,7 @@
     <MESSAGE value="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings" />
     <MESSAGE value="Added datasets that have k folds in a separate directory called data_k_fold/" />
     <MESSAGE value="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes" />
+    <MESSAGE value="Small adjustments &amp; created GIF of updated version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small adjustments &amp; created GIF of updated version" />
   </component>
 </project>

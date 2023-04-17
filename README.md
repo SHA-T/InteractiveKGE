@@ -5,7 +5,7 @@ adding new entities during training. For more information on how the actual embe
 
 ## 1. Changes to KnowledgeGraphEmbedding Repo
 
-Some changes were made to the existing code of [KnowledgeGraphEmbedding](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding). These are fixing seeds and modifying some code parts such that 
+Some changes were made to the existing code of [KnowledgeGraphEmbedding](https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding). These are i.a. fixing seeds and modifying some code parts such that 
 it is possible to store embeddings during the training.
 
 Most notably the module `run.py` was modified for the main purpose of this extended repo to visualize embeddings, change them via drag-and-drop and add new entities - all live during training.
@@ -43,16 +43,16 @@ python -u codes/run.py
 ![](https://github.com/SHA-T/InteractiveKGE/blob/main/Live_KGE_Visualization.gif)
 
 This `countries_neighb_UsaSpaDen` dataset is a simplified version of the `countries_S1` dataset, that is filtered for the countries USA, Spain and Denmark and all of their neighbors.
-You can add your own datasets and run the Interactive KGE on them. Therefore, add your datasets to the `data/` directory, 
+You can add your own datasets and run the Interactive KGE on them. Therefore, add your datasets to the _data/_ directory, 
 but keep the structure and format same as the other datasets. Visualization caps the dimensionality `-d` at 2.
 
 To use Pretraining set the `--do_pretrain` argument.
 
 ```
-python -u codes/run.py 
+CUDA_VISIBLE_DEVICES=0 python -u codes/run.py 
     --do_pretrain 
-    --do_train --do_valid --do_test 
-    --data_path data/countries_S1 
+    --do_train --do_valid --do_test
+    --cuda 
     ...
     ...
     ...
