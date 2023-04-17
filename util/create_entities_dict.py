@@ -4,7 +4,7 @@ import pandas as pd
 This script creates an entities.dict file from the train, valid and test set under the specified data sub-folder.
 """
 
-DATASET_NAME = 'YamanishiEnzymes'
+DATASET_NAME = 'countries_neighb_UsaSpaDen'
 
 if __name__ == '__main__':
     df_train = pd.read_csv(f"../data/{DATASET_NAME}/train.txt", sep='\t',

@@ -8,9 +8,18 @@ import argparse
 import json
 import logging
 import os
+import pathlib
 import random
+from random import randint
 
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+from mpl_interactions import panhandler, zoom_factory
+from multiprocessing import Process, Pipe
+from collections import deque
+
 import torch
 torch.manual_seed(0)
 np.random.seed(0)
@@ -22,6 +31,7 @@ from model import KGEModel
 from dataloader import TrainDataset
 from dataloader import BidirectionalOneShotIterator
 
+
 def parse_args(args=None):
     parser = argparse.ArgumentParser(
         description='Training and Testing Knowledge Graph Embedding Models',
@@ -29,6 +39,8 @@ def parse_args(args=None):
     )
 
     parser.add_argument('--cuda', action='store_true', help='use GPU')
+
+    parser.add_argument('--visualize', action='store_true', help='Visualize embeddings (Interactive Mode)')
 
     parser.add_argument('--do_pretrain', action='store_true')
     parser.add_argument('--do_train', action='store_true')
@@ -73,10 +85,11 @@ def parse_args(args=None):
     
     return parser.parse_args(args)
 
+
 def override_config(args):
-    '''
+    """
     Override model and data configuration
-    '''
+    """
     
     with open(os.path.join(args.init_checkpoint, 'config.json'), 'r') as fjson:
         argparse_dict = json.load(fjson)
@@ -89,12 +102,13 @@ def override_config(args):
     args.double_relation_embedding = argparse_dict['double_relation_embedding']
     args.hidden_dim = argparse_dict['hidden_dim']
     args.test_batch_size = argparse_dict['test_batch_size']
-    
+
+
 def save_model(model, optimizer, save_variable_list, args, step=0):
-    '''
+    """
     Save the parameters of the model and the optimizer,
     as well as some other variables such as step and learning_rate
-    '''
+    """
     
     argparse_dict = vars(args)
     with open(os.path.join(args.save_path, 'config.json'), 'w') as fjson:
@@ -119,10 +133,11 @@ def save_model(model, optimizer, save_variable_list, args, step=0):
         relation_embedding
     )
 
+
 def read_triple(file_path, entity2id, relation2id):
-    '''
+    """
     Read triples and map them into ids.
-    '''
+    """
     triples = []
     with open(file_path) as fin:
         for line in fin:
@@ -130,11 +145,11 @@ def read_triple(file_path, entity2id, relation2id):
             triples.append((entity2id[h], relation2id[r], entity2id[t]))
     return triples
 
-def set_logger(args):
-    '''
-    Write logs to checkpoint and console
-    '''
 
+def set_logger(args):
+    """
+    Write logs to checkpoint and console
+    """
     if args.do_train:
         log_file = os.path.join(args.save_path or args.init_checkpoint, 'train.log')
     else:
@@ -153,15 +168,16 @@ def set_logger(args):
     console.setFormatter(formatter)
     logging.getLogger('').addHandler(console)
 
+
 def log_metrics(mode, step, metrics):
-    '''
+    """
     Print the evaluation logs
-    '''
+    """
     for metric in metrics:
         logging.info('%s %s at step %d: %f' % (mode, metric, step, metrics[metric]))
         
         
-def main(args):
+def main(args, conn):
     if (not args.do_train) and (not args.do_valid) and (not args.do_test):
         raise ValueError('one of train/val/test mode must be choosed.')
     
@@ -175,6 +191,11 @@ def main(args):
     
     if args.save_path and not os.path.exists(args.save_path):
         os.makedirs(args.save_path)
+
+    if args.visualize:
+        args.do_pretrain = False
+        args.hidden_dim = 2
+        args.save_checkpoint_steps = 1
     
     # Write logs to checkpoint and console
     set_logger(args)
@@ -223,7 +244,7 @@ def main(args):
     
     #All true triples
     all_true_triples = train_triples + valid_triples + test_triples
-    
+
     kge_model = KGEModel(
         model_name=args.model,
         nentity=nentity,
@@ -387,6 +408,13 @@ def main(args):
                 logging.info('Evaluating on Valid Dataset...')
                 metrics = kge_model.test_step(kge_model, valid_triples, all_true_triples, args)
                 log_metrics('Valid', step, metrics)
+
+            if args.visualize:
+                conn.send(kge_model.entity_embedding.detach().numpy())
+                if conn.poll():
+                    id_xy_local = conn.recv()
+                    with torch.no_grad():
+                        kge_model.entity_embedding[id_xy_local[0]] = torch.from_numpy(np.asarray(id_xy_local[1]))
         
         save_variable_list = {
             'step': step, 
@@ -412,7 +440,225 @@ def main(args):
         logging.info('Evaluating on Training Dataset...')
         metrics = kge_model.test_step(kge_model, train_triples, all_true_triples, args)
         log_metrics('Test', step, metrics)
+
+
+def path_object_to_str(obj):
+    if isinstance(obj, pathlib.Path):
+        return str(obj)
+
+
+class DraggablePoint:
+
+    lock = None     # only one can be animated at a time
+
+    def __init__(self, point, entity_id):
+        self.entity_id = entity_id
+        self.point = point
+        self.press = None
+        self.background = None
+
+    def connect(self):
+        """
+        Connect to all the events we need
+        """
+        self.cidpress = self.point.figure.canvas.mpl_connect('button_press_event', self.on_press)
+        self.cidrelease = self.point.figure.canvas.mpl_connect('button_release_event', self.on_release)
+        self.cidmotion = self.point.figure.canvas.mpl_connect('motion_notify_event', self.on_motion)
+
+    def on_press(self, event):
+        if event.inaxes != self.point.axes:
+            return
+        if DraggablePoint.lock is not None:
+            return
+        contains, attrd = self.point.contains(event)
+        if not contains:
+            return
+        self.press = self.point.center, event.xdata, event.ydata
+        DraggablePoint.lock = self
+
+        # draw everything but the selected rectangle and store the pixel buffer
+        canvas = self.point.figure.canvas
+        axes = self.point.axes
+        self.point.set_animated(True)
+        canvas.draw()
+        self.background = canvas.copy_from_bbox(self.point.axes.bbox)
+
+        # now redraw just the rectangle
+        axes.draw_artist(self.point)
+
+        # and blit just the redrawn area
+        canvas.blit(axes.bbox)
+
+    def on_motion(self, event):
+        if DraggablePoint.lock is not self:
+            return
+        if event.inaxes != self.point.axes:
+            return
+        # We only get this far if this point is pressed and then mouse moves
+        self.point.center, xpress, ypress = self.press
+        dx = event.xdata - xpress
+        dy = event.ydata - ypress
+        self.point.center = (self.point.center[0]+dx, self.point.center[1]+dy)
+
+        # Update embedding to the destination where the circle was dragged to
+        global id_xy
+        id_xy = (self.entity_id, self.point.center)
+
+        canvas = self.point.figure.canvas
+        axes = self.point.axes
+        # restore the background region
+        canvas.restore_region(self.background)
+
+        # redraw just the current rectangle
+        axes.draw_artist(self.point)
+
+        # blit just the redrawn area
+        canvas.blit(axes.bbox)
+
+    def on_release(self, event):
+        """
+        On release, we reset the press data
+        """
+        if DraggablePoint.lock is not self:
+            return
+
+        self.press = None
+        DraggablePoint.lock = None
+
+        # turn off the rect animation property and reset the background
+        self.point.set_animated(False)
+        self.background = None
+
+        # redraw the full figure
+        self.point.figure.canvas.draw()
+
+    def disconnect(self):
+        """
+        Disconnect all the stored connection ids
+        """
+        self.point.figure.canvas.mpl_disconnect(self.cidpress)
+        self.point.figure.canvas.mpl_disconnect(self.cidrelease)
+        self.point.figure.canvas.mpl_disconnect(self.cidmotion)
         
 
 if __name__ == '__main__':
-    main(parse_args())
+    # Tuple to be sent through multiprocessing.Pipe to child process, where the KGE training happens
+    # First element: ID of the entity that is moved via drag & drop | Second element: coordinates of placement
+    id_xy = (0, (0.0, 0.0))
+
+    args = parse_args()
+    conn_parent, conn_child = Pipe()
+
+    if not args.visualize:
+        main(args, conn_child)
+    else:
+        p = Process(target=main, args=(args, conn_child))
+        p.start()
+
+        # Receive initial embeddings from child process (waits until something comes)
+        emb = conn_parent.recv()
+
+        # Create colors for plot
+        colors = []
+        for i in range(len(emb)):
+            colors.append('#%06X' % randint(0, 0xFFFFFF))
+
+        # Create annotations from entity labels
+        labels = pd.read_csv(f"{args.data_path}/entities.dict", sep='\t', header=None, names=['idx', 'entity'],
+                             index_col=0)
+        labels = labels.entity.tolist()
+        annotations = len(labels) * [plt.Annotation("", (0, 0))]
+
+        plt.ion()
+        fig = plt.figure(num='InteractiveKGE', figsize=(6.8, 6.8))
+        ax = fig.add_subplot(111)
+        title = "(Use the mouse-wheel to zoom in and out. \n" \
+                "Change the embeddings by dragging the points with the left mouse button.)"
+        if args.data_path == "data/countries_neighb_UsaSpaDen":
+            title = "Neighbors of USA, Spain and Denmark by 'countries_S1' dataset\n" + title
+        plt.title(title)
+
+        # Set initial limits manually, since ax will be populated with circles
+        min_lim, max_lim = np.min(emb), np.max(emb)
+        max_lim_factor = 1.6
+        min_lim_factor = max_lim_factor if (min_lim < 0) else 1.0/max_lim_factor
+        max_lim *= max_lim_factor
+        min_lim *= min_lim_factor
+        ax.set_xlim(min_lim, max_lim)
+        ax.set_ylim(min_lim, max_lim)
+
+        # Create circles and annotate
+        drs = []
+        circles = []
+        r1 = (max_lim - min_lim) / 50.0
+        r2 = (max_lim - min_lim) / 70.0
+        r3 = (max_lim - min_lim) / 100.0
+        r4 = (max_lim - min_lim) / 120.0
+        r5 = (max_lim - min_lim) / 140.0
+        for i in range(len(emb)):
+            circles.append(patches.Circle(tuple(emb[i]), r1, fc=colors[i], alpha=1.0))
+            annotations[i] = ax.annotate(labels[i], (emb[i, 0] + r2, emb[i, 1] + r2))
+            annotations[i].set_color(colors[i])
+
+        # Add circles to ax
+        for i, circ in enumerate(circles):
+            ax.add_patch(circ)
+            dr = DraggablePoint(circ, i)
+            dr.connect()
+            drs.append(dr)
+
+        plt.show()
+
+        # Mouse-Wheel Zooming
+        disconnect_zoom = zoom_factory(ax)
+        pan_handler = panhandler(fig)
+
+        id_xy_old = id_xy
+        q = deque(maxlen=6)
+
+        try:
+            while p.is_alive():  # while process is still alive
+
+                # Only RECEIVE if something was sent to this end of the pipe
+                if conn_parent.poll():
+                    # If RECEIVE (=embedding changed), update historical positions in ringbuffer
+                    q.append([])
+                    for i in range(len(emb)):
+                        q[-1].append(patches.Circle(tuple(emb[i]), r2, fc=colors[i], alpha=0.6))
+                        ax.add_patch(q[-1][i])
+                        if len(q) > 1:
+                            q[-2][i].set(radius=r3, alpha=0.5)
+                            if len(q) > 2:
+                                q[-3][i].set(radius=r4, alpha=0.4)
+                                if len(q) > 3:
+                                    q[-4][i].set(radius=r5, alpha=0.3)
+                                    if len(q) == 6:
+                                        q[0][i].remove()
+                    # RECEIVE updated embeddings from child process
+                    emb = conn_parent.recv()
+
+                # SEND embedding that was changed via drag-and-drop to child process
+                if id_xy != id_xy_old:
+                    conn_parent.send(id_xy)
+                    id_xy_old = id_xy
+                    # Update locally too, so that circle.center position won't get updated in the next code block
+                    emb[id_xy[0]] = np.asarray(id_xy[1])
+
+                # Update coordinates of circles and annotations
+                for i, circ in enumerate(circles):
+                    circ.center = tuple(emb[i])
+                    annotations[i].set_position((emb[i, 0] + r2, emb[i, 1] + r2))
+
+                fig.canvas.draw_idle()
+                plt.pause(0.2)
+
+            plt.waitforbuttonpress()
+
+        except KeyboardInterrupt:
+            plt.close()
+            p.terminate()
+            p.close()
+            print("\nProgram terminated.\n")
+
+        p.join()
+        p.close()

@@ -1,3 +1,7 @@
 pytorch >= 1.0.0
 numpy >= 1.15.4 #For data preparation process
 scikit-learn >= 0.20.2 #For AUC-PR
+pandas~=1.5.2
+matplotlib~=3.5.3
+scipy~=1.10.0
+mpl-interactions
