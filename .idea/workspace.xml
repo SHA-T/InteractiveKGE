@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Update README.md">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Improved the drag-and-drop feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -451,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681771045002</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Improved the drag-and-drop feature">
+      <created>1681820290850</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1681820290850</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -466,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created option to do Pretraining (--do_pretrain) to learn semantics for new relations/entities before actual training." />
     <MESSAGE value="Added relations.dict to Yamanishi data" />
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="Fixed tab seperator in pretrain.txt" />
@@ -491,6 +496,7 @@
     <MESSAGE value="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes" />
     <MESSAGE value="Small adjustments &amp; created GIF of updated version" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="Improved the drag-and-drop feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved the drag-and-drop feature" />
   </component>
 </project>

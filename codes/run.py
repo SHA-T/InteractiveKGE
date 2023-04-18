@@ -668,7 +668,9 @@ if __name__ == '__main__':
                 fig.canvas.draw_idle()
                 plt.pause(PLT_INTERACTION_WINDOW)
 
-            plt.waitforbuttonpress()
+            # Only end on keyboard press and allow mouse clicks after training finished
+            while not plt.waitforbuttonpress():
+                continue
 
         except KeyboardInterrupt:
             plt.close()
