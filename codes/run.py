@@ -9,6 +9,7 @@ import json
 import logging
 import os
 import pathlib
+import time
 import random
 from random import randint
 
@@ -30,6 +31,9 @@ from model import KGEModel
 
 from dataloader import TrainDataset
 from dataloader import BidirectionalOneShotIterator
+
+
+PLT_INTERACTION_WINDOW = 0.1
 
 
 def parse_args(args=None):
@@ -375,8 +379,23 @@ def main(args, conn):
         
         # Training Loop
         for step in range(init_step, args.max_steps):
+
+            if args.visualize:
+                # From parent
+                if conn.poll():
+                    id_xy_local = conn.recv()
+                    # Overwrite embedding of dragged entity
+                    with torch.no_grad():
+                        kge_model.entity_embedding[id_xy_local[0]] = torch.from_numpy(np.asarray(id_xy_local[1]))
             
             log = kge_model.train_step(kge_model, optimizer, train_iterator, args, pretrain_finished=True)
+
+            if args.visualize:
+                # To parent
+                conn.send(kge_model.entity_embedding.detach().numpy())
+                # Makes sure pipe won't get filled more before it was emptied
+                # and slows visualization a bit down for the human eye
+                time.sleep(PLT_INTERACTION_WINDOW * 1.5)
             
             training_logs.append(log)
             
@@ -408,13 +427,6 @@ def main(args, conn):
                 logging.info('Evaluating on Valid Dataset...')
                 metrics = kge_model.test_step(kge_model, valid_triples, all_true_triples, args)
                 log_metrics('Valid', step, metrics)
-
-            if args.visualize:
-                conn.send(kge_model.entity_embedding.detach().numpy())
-                if conn.poll():
-                    id_xy_local = conn.recv()
-                    with torch.no_grad():
-                        kge_model.entity_embedding[id_xy_local[0]] = torch.from_numpy(np.asarray(id_xy_local[1]))
         
         save_variable_list = {
             'step': step, 
@@ -500,10 +512,6 @@ class DraggablePoint:
         dy = event.ydata - ypress
         self.point.center = (self.point.center[0]+dx, self.point.center[1]+dy)
 
-        # Update embedding to the destination where the circle was dragged to
-        global id_xy
-        id_xy = (self.entity_id, self.point.center)
-
         canvas = self.point.figure.canvas
         axes = self.point.axes
         # restore the background region
@@ -521,6 +529,10 @@ class DraggablePoint:
         """
         if DraggablePoint.lock is not self:
             return
+
+        # Update embedding to the destination where the circle was dragged to
+        global id_xy
+        id_xy = (self.entity_id, (event.xdata, event.ydata))
 
         self.press = None
         DraggablePoint.lock = None
@@ -625,6 +637,11 @@ if __name__ == '__main__':
         try:
             while p.is_alive():  # while process is still alive
 
+                # SEND embedding that was changed via drag-and-drop to child process
+                if id_xy != id_xy_old:
+                    conn_parent.send(id_xy)
+                    id_xy_old = id_xy
+
                 # Only RECEIVE if something was sent to this end of the pipe
                 if conn_parent.poll():
                     # If RECEIVE (=embedding changed), update historical positions in ringbuffer
@@ -643,20 +660,13 @@ if __name__ == '__main__':
                     # RECEIVE updated embeddings from child process
                     emb = conn_parent.recv()
 
-                # SEND embedding that was changed via drag-and-drop to child process
-                if id_xy != id_xy_old:
-                    conn_parent.send(id_xy)
-                    id_xy_old = id_xy
-                    # Update locally too, so that circle.center position won't get updated in the next code block
-                    emb[id_xy[0]] = np.asarray(id_xy[1])
-
                 # Update coordinates of circles and annotations
                 for i, circ in enumerate(circles):
                     circ.center = tuple(emb[i])
                     annotations[i].set_position((emb[i, 0] + r2, emb[i, 1] + r2))
 
                 fig.canvas.draw_idle()
-                plt.pause(0.2)
+                plt.pause(PLT_INTERACTION_WINDOW)
 
             plt.waitforbuttonpress()
 
