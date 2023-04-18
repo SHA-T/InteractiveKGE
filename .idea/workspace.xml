@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Improved the drag-and-drop feature">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="After training ended only keyboard presses close window, mouse clicks still allowed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
     </list>
@@ -457,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681820290850</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="After training ended only keyboard presses close window, mouse clicks still allowed">
+      <created>1681828740434</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1681828740434</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added relations.dict to Yamanishi data" />
     <MESSAGE value="Fixed a bug" />
     <MESSAGE value="Fixed tab seperator in pretrain.txt" />
     <MESSAGE value="Updated entities.dict &amp; relations.dict" />
@@ -497,6 +503,7 @@
     <MESSAGE value="Small adjustments &amp; created GIF of updated version" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Improved the drag-and-drop feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved the drag-and-drop feature" />
+    <MESSAGE value="After training ended only keyboard presses close window, mouse clicks still allowed" />
+    <option name="LAST_COMMIT_MESSAGE" value="After training ended only keyboard presses close window, mouse clicks still allowed" />
   </component>
 </project>

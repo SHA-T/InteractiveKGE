@@ -392,7 +392,7 @@ def main(args, conn):
 
             if args.visualize:
                 # To parent
-                conn.send(kge_model.entity_embedding.detach().numpy())
+                conn.send((kge_model.entity_embedding.detach().numpy(), kge_model.relation_embedding.detach().numpy()))
                 # Makes sure pipe won't get filled more before it was emptied
                 # and slows visualization a bit down for the human eye
                 time.sleep(PLT_INTERACTION_WINDOW * 1.5)
@@ -567,19 +567,23 @@ if __name__ == '__main__':
         p = Process(target=main, args=(args, conn_child))
         p.start()
 
-        # Create annotations from entity labels
-        labels = pd.read_csv(f"{args.data_path}/entities.dict", sep='\t', header=None, names=['idx', 'entity'],
-                             index_col=0)
-        labels = labels.entity.tolist()
-        annotations = len(labels) * [plt.Annotation("", (0, 0))]
+        # Create annotations from entity & relation labels
+        ent_labels = pd.read_csv(f"{args.data_path}/entities.dict", sep='\t', header=None, names=['idx', 'entity'],
+                                 index_col=0)
+        ent_labels = ent_labels.entity.tolist()
+        rel_labels = pd.read_csv(f"{args.data_path}/relations.dict", sep='\t', header=None, names=['idx', 'relation'],
+                                 index_col=0)
+        rel_labels = rel_labels.relation.tolist()
+        ent_annotations = len(ent_labels) * [plt.Annotation("", (0, 0))]
+        rel_annotations = len(rel_labels) * [plt.Annotation("", (0, 0))]
 
         # Create colors for plot
         colors = []
-        for i in range(len(labels)):
+        for i in range(len(ent_labels)):
             colors.append('#%06X' % randint(0, 0xFFFFFF))
 
         # Receive initial embeddings from child process (waits until something comes)
-        emb = conn_parent.recv()
+        ent_embeddings, rel_embeddings = conn_parent.recv()
 
         # Configure plot
         plt.ion()
@@ -593,7 +597,7 @@ if __name__ == '__main__':
             plt.suptitle("InteractiveKGE")
 
         # Set initial limits manually, since ax will be populated with circles
-        min_lim, max_lim = np.min(emb), np.max(emb)
+        min_lim, max_lim = np.min(ent_embeddings), np.max(ent_embeddings)
         max_lim_factor = 1.6
         min_lim_factor = max_lim_factor if (min_lim < 0) else 1.0/max_lim_factor
         max_lim *= max_lim_factor
@@ -601,26 +605,35 @@ if __name__ == '__main__':
         ax.set_xlim(min_lim, max_lim)
         ax.set_ylim(min_lim, max_lim)
 
-        # Create circles and annotate
+        # Create circles & arrows and annotate
         drs = []
         circles = []
+        arrows = []
         r1 = (max_lim - min_lim) / 50.0
         r2 = (max_lim - min_lim) / 70.0
         r3 = (max_lim - min_lim) / 80.0
         r4 = (max_lim - min_lim) / 100.0
         r5 = (max_lim - min_lim) / 120.0
         r6 = (max_lim - min_lim) / 140.0
-        for i in range(len(emb)):
-            circles.append(patches.Circle(tuple(emb[i]), r1, fc=colors[i], alpha=1.0))
-            annotations[i] = ax.annotate(labels[i], (emb[i, 0] + r2, emb[i, 1] + r2))
-            annotations[i].set_color(colors[i])
+        for i in range(len(ent_embeddings)):
+            circles.append(patches.Circle(tuple(ent_embeddings[i]), r1, fc=colors[i], alpha=1.0))
+            ent_annotations[i] = ax.annotate(ent_labels[i],
+                                             (ent_embeddings[i, 0] + r2, ent_embeddings[i, 1] + r2))
+            ent_annotations[i].set_color(colors[i])
+        for i in range(len(rel_embeddings)):
+            arrows.append(patches.FancyArrow(0, 0, rel_embeddings[i][0], rel_embeddings[i][0],
+                                             width=r6, color='k', linewidth=0))
+            rel_annotations[i] = ax.annotate(rel_labels[i],
+                                             (rel_embeddings[i][0] + r2, rel_embeddings[i][1] + r2))
 
-        # Add circles to ax
+        # Add circles & arrows to ax
         for i, circ in enumerate(circles):
             ax.add_patch(circ)
             dr = DraggablePoint(circ, i)
             dr.connect()
             drs.append(dr)
+        for arrow in arrows:
+            ax.add_patch(arrow)
 
         plt.show()
 
@@ -646,8 +659,8 @@ if __name__ == '__main__':
                 if conn_parent.poll():
                     # If RECEIVE (=embedding changed), update historical positions in ringbuffer
                     q.append([])
-                    for i in range(len(emb)):
-                        q[-1].append(patches.Circle(tuple(emb[i]), r3, fc=colors[i], alpha=0.5))
+                    for i in range(len(ent_embeddings)):
+                        q[-1].append(patches.Circle(tuple(ent_embeddings[i]), r3, fc=colors[i], alpha=0.5))
                         ax.add_patch(q[-1][i])
                         if len(q) > 1:
                             q[-2][i].set(radius=r4, alpha=0.4)
@@ -658,12 +671,15 @@ if __name__ == '__main__':
                                     if len(q) == maxlen:
                                         q[0][i].remove()
                     # RECEIVE updated embeddings from child process
-                    emb = conn_parent.recv()
+                    ent_embeddings, rel_embeddings = conn_parent.recv()
 
-                # Update coordinates of circles and annotations
+                # Update coordinates of circles, arrows and annotations
                 for i, circ in enumerate(circles):
-                    circ.center = tuple(emb[i])
-                    annotations[i].set_position((emb[i, 0] + r2, emb[i, 1] + r2))
+                    circ.center = tuple(ent_embeddings[i])
+                    ent_annotations[i].set_position((ent_embeddings[i, 0] + r2, ent_embeddings[i, 1] + r2))
+                for i, arrow in enumerate(arrows):
+                    arrow.set_data(dx=rel_embeddings[i][0], dy=rel_embeddings[i][1])
+                    rel_annotations[i].set_position((rel_embeddings[i][0] + r2, rel_embeddings[i][1] + r2))
 
                 fig.canvas.draw_idle()
                 plt.pause(PLT_INTERACTION_WINDOW)
