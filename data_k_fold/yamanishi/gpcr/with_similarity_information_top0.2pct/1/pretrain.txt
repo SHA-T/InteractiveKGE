@@ -1,0 +1,8 @@
+mA	relatedTo	m1
+mA	relatedTo	m2
+mA	relatedTo	m3
+mB	relatedTo	m1
+mB	relatedTo	m2
+mB	relatedTo	m3
+mA	sameAs	mB
+mB	sameAs	mA

@@ -1,0 +1,5 @@
+hsa:5241	interactsWith	D00585
+hsa:367	interactsWith	D00585
+hsa:6256	interactsWith	D00094
+hsa:6258	interactsWith	D00094
+hsa:6256	interactsWith	D00316

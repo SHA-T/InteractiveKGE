@@ -1,0 +1,4 @@
+hsa:6257	interactsWith	D01132
+hsa:5915	interactsWith	D00094
+hsa:6256	interactsWith	D01132
+hsa:6257	interactsWith	D00094

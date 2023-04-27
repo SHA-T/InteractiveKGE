@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="After training ended only keyboard presses close window, mouse clicks still allowed">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added relations to the plot">
+      <change afterPath="$PROJECT_DIR$/data_external/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/e_simmat_dc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/gpcr_simmat_dc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/ic_simmat_dc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/nr_simmat_dc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/e_simmat_dg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/gpcr_simmat_dg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/ic_simmat_dg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/nr_simmat_dg.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/create_similarity_info_datasets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +41,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LNCzWkU7YMFJjcmZoykCD8D3mc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,15 +52,15 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_similarity_information_top2pct/5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\codes" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\ion_channel" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\5" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\4" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\3" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\2" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\original" />
@@ -59,7 +70,7 @@
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme\original" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.crop_images_and_create_gif">
+  <component name="RunManager" selected="Python.create_similarity_info_datasets">
     <configuration name="blub" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -73,6 +84,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blub.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="create_similarity_info_datasets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/create_similarity_info_datasets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,27 +155,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="InteractiveKGE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_similarity_info_datasets" />
         <item itemvalue="Python.crop_images_and_create_gif" />
         <item itemvalue="Python.blub" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.test3" />
-        <item itemvalue="Python.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -464,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681828740434</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Added relations to the plot">
+      <created>1681850538264</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1681850538265</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed a bug" />
     <MESSAGE value="Fixed tab seperator in pretrain.txt" />
     <MESSAGE value="Updated entities.dict &amp; relations.dict" />
     <MESSAGE value="Updated entities.dict" />
@@ -504,6 +521,7 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Improved the drag-and-drop feature" />
     <MESSAGE value="After training ended only keyboard presses close window, mouse clicks still allowed" />
-    <option name="LAST_COMMIT_MESSAGE" value="After training ended only keyboard presses close window, mouse clicks still allowed" />
+    <MESSAGE value="Added relations to the plot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added relations to the plot" />
   </component>
 </project>
