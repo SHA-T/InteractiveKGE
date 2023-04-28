@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added relations to the plot">
-      <change afterPath="$PROJECT_DIR$/data_external/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/e_simmat_dc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/gpcr_simmat_dc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/ic_simmat_dc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_CompoundStructure/nr_simmat_dc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/e_simmat_dg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/gpcr_simmat_dg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/ic_simmat_dg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Yamanishi_SimilarityMatrix_ProteinSequence/nr_simmat_dg.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/create_similarity_info_datasets.py" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added script util/create_similarity_info_datasets.py &amp; added similarity info for all Yamanishi subsets in data_k_fold/ directory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -482,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681850538265</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added script util/create_similarity_info_datasets.py &amp; added similarity info for all Yamanishi subsets in data_k_fold/ directory">
+      <created>1682622460194</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1682622460194</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed tab seperator in pretrain.txt" />
     <MESSAGE value="Updated entities.dict &amp; relations.dict" />
     <MESSAGE value="Updated entities.dict" />
     <MESSAGE value="Added feature to fix pretrained embeddings" />
@@ -522,6 +519,7 @@
     <MESSAGE value="Improved the drag-and-drop feature" />
     <MESSAGE value="After training ended only keyboard presses close window, mouse clicks still allowed" />
     <MESSAGE value="Added relations to the plot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added relations to the plot" />
+    <MESSAGE value="Added script util/create_similarity_info_datasets.py &amp; added similarity info for all Yamanishi subsets in data_k_fold/ directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added script util/create_similarity_info_datasets.py &amp; added similarity info for all Yamanishi subsets in data_k_fold/ directory" />
   </component>
 </project>

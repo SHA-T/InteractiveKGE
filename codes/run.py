@@ -22,9 +22,9 @@ from multiprocessing import Process, Pipe
 from collections import deque
 
 import torch
-torch.manual_seed(0)
-np.random.seed(0)
-random.seed(0)
+torch.manual_seed(42)
+np.random.seed(42)
+random.seed(42)
 from torch.utils.data import DataLoader
 
 from model import KGEModel
