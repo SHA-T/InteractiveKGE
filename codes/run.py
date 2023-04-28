@@ -17,7 +17,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
-from mpl_interactions import panhandler, zoom_factory
 from multiprocessing import Process, Pipe
 from collections import deque
 
@@ -638,6 +637,7 @@ if __name__ == '__main__':
         plt.show()
 
         # Mouse-Wheel Zooming
+        from mpl_interactions import panhandler, zoom_factory   # placed here for reasons
         disconnect_zoom = zoom_factory(ax)
         pan_handler = panhandler(fig)
 
