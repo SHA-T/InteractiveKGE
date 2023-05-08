@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Changed default seed">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it">
+      <change afterPath="$PROJECT_DIR$/util/evaluate_similarity_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/InteractiveKGE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InteractiveKGE.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme\original" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_similarity_info_datasets">
+  <component name="RunManager" selected="Python.evaluate_similarity_info">
     <configuration name="blub" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,6 +127,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="evaluate_similarity_info" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/evaluate_similarity_info.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,34 +169,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="InteractiveKGE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.evaluate_similarity_info" />
         <item itemvalue="Python.create_similarity_info_datasets" />
         <item itemvalue="Python.crop_images_and_create_gif" />
         <item itemvalue="Python.blub" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.test3" />
       </list>
     </recent_temporary>
   </component>
@@ -487,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682698222930</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it">
+      <created>1682700306362</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1682700306362</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -502,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated entities.dict" />
     <MESSAGE value="Added feature to fix pretrained embeddings" />
     <MESSAGE value="Test" />
     <MESSAGE value="Fixed issue with freezing embeddings" />
@@ -527,6 +535,7 @@
     <MESSAGE value="Added relations to the plot" />
     <MESSAGE value="Added script util/create_similarity_info_datasets.py &amp; added similarity info for all Yamanishi subsets in data_k_fold/ directory" />
     <MESSAGE value="Changed default seed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed default seed" />
+    <MESSAGE value="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it" />
   </component>
 </project>

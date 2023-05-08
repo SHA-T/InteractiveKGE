@@ -5,3 +5,4 @@ pandas~=1.5.2
 matplotlib~=3.5.3
 scipy~=1.10.0
 mpl-interactions
+networkx>=2.8.4
