@@ -15,8 +15,7 @@ Pretraining allows for the training of the semantics of new relations with the h
 An example for such a file can be looked up in the _data/Yamanishi_with_Similarity_Information_ directory. 
 While the regular training phase uses the data in _train.txt_, pretraining precedes regular training and only uses the data in _pretrain.txt_. 
 Pretraining lasts only a small number of epochs before regular training starts. 
-After Pretraining is completed the embeddings of the new relations will be frozen, so that the learned semantics don't get corrupted. 
-Currently it is assumed that all relations in the _relations.dict_ file, except the first listed relation, are new relations (if pretraining is activated).
+After Pretraining is completed the embeddings of the new relations will be frozen, so that the learned semantics don't get corrupted.
 
 ## 2. How To Use
 

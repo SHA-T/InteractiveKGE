@@ -214,6 +214,10 @@ def main(args, conn):
         for line in fin:
             rid, relation = line.strip().split('\t')
             relation2id[relation] = int(rid)
+
+    # Create relation2id dictionary containing only relations present in the pretrain set (mock relations)
+    mock_relations = pd.read_csv(os.path.join(args.data_path, 'pretrain.txt'), sep='\t', header=None)[1].unique()
+    relation2id_mock = {k: relation2id[k] for k in mock_relations}
     
     # Read regions for Countries S* datasets
     if args.countries:
@@ -387,7 +391,8 @@ def main(args, conn):
                     with torch.no_grad():
                         kge_model.entity_embedding[id_xy_local[0]] = torch.from_numpy(np.asarray(id_xy_local[1]))
             
-            log = kge_model.train_step(kge_model, optimizer, train_iterator, args, pretrain_finished=True)
+            log = kge_model.train_step(kge_model, optimizer, train_iterator, args,
+                                       pretrain_finished=True, relation2id_mock=relation2id_mock)
 
             if args.visualize:
                 # To parent

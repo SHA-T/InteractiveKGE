@@ -250,7 +250,7 @@ class KGEModel(nn.Module):
         return score
     
     @staticmethod
-    def train_step(model, optimizer, train_iterator, args, pretrain_finished=False):
+    def train_step(model, optimizer, train_iterator, args, pretrain_finished=False, relation2id_mock=None):
         '''
         A single train step. Apply back-propation and return the loss
         '''
@@ -301,13 +301,14 @@ class KGEModel(nn.Module):
             
         loss.backward()
 
-        # Freeze embeddings of all relations except the first, if pretraining was activated and has finished
+        # Freeze embeddings of all mock relations, if pretraining was activated and has finished
         if args.do_pretrain:
             if pretrain_finished:
                 # In case of Adam, the relations with grad set to zero, will still change because of
                 # Exponential Moving Average. But these changes are only slightly and only driven by the gradients
                 # which were computed during pretraining.
-                model.relation_embedding.grad[1:] = 0
+                for value in relation2id_mock.values():
+                    model.relation_embedding.grad[value] = 0
 
         optimizer.step()
 

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it">
-      <change afterPath="$PROJECT_DIR$/util/evaluate_similarity_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/InteractiveKGE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InteractiveKGE.iml" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated script that helps to evaluate how useful the injected similarity information is.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_commands.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,7 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682700306362</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Added a script that helps to evaluate how useful the injected similarity information is.">
+      <created>1683580793598</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1683580793598</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Updated script that helps to evaluate how useful the injected similarity information is.">
+      <created>1683636716444</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1683636716444</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -511,8 +526,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added feature to fix pretrained embeddings" />
-    <MESSAGE value="Test" />
     <MESSAGE value="Fixed issue with freezing embeddings" />
     <MESSAGE value="Updated utility scripts" />
     <MESSAGE value="Added more Yamanishi datasets with different thresholds for integrated Similarity Information" />
@@ -536,6 +549,8 @@
     <MESSAGE value="Added script util/create_similarity_info_datasets.py &amp; added similarity info for all Yamanishi subsets in data_k_fold/ directory" />
     <MESSAGE value="Changed default seed" />
     <MESSAGE value="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it" />
+    <MESSAGE value="Added a script that helps to evaluate how useful the injected similarity information is." />
+    <MESSAGE value="Updated script that helps to evaluate how useful the injected similarity information is." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated script that helps to evaluate how useful the injected similarity information is." />
   </component>
 </project>

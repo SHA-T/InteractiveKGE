@@ -21,7 +21,7 @@ countries_neighb_UsaSpaDen:
 python -u codes/run.py --visualize --do_train --do_valid --do_test --data_path data/countries_neighb_UsaSpaDen --model TransE --valid_steps 10 --save_checkpoint_steps 1 -n 2 -b 8 -d 2 -g 1.0 -a 1.0 -adv -lr 0.1 --max_steps 100 -save models/countries_neighb_UsaSpaDen_TransE --test_batch_size 8
 
 Pretraining:
-python -u codes/run.py --do_train --do_pretrain --do_valid --do_test --data_path data/Yamanishi_with_Similarity_Information_70 --model RotatE --valid_steps 200 --log_steps 100 -n 8 -b 32 -d 5 -g 8.0 -a 1.0 -adv -lr 0.01 --max_steps 30 -save models/Yamanishi_with_Similarity_Information_70_RotatE_Pretrained --test_batch_size 8 -de
+python -u codes/run.py --do_train --do_pretrain --do_valid --do_test --data_path data_k_fold/yamanishi/enzyme/with_similarity_information_top0.1pct/1 --model RotatE --valid_steps 200 --log_steps 100 -n 8 -b 32 -d 5 -g 8.0 -a 1.0 -adv -lr 0.01 --max_steps 30 -save models/Test --test_batch_size 8 -de
 
 
 ___CUDA calls___
