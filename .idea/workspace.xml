@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated script that helps to evaluate how useful the injected similarity information is.">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)">
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_e.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_gpcr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_ic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_nr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_targetsAll.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_e.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_gpcr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_ic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_nr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_targetsAll.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/drugbank_kegg_id_map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/drugbank_kegg_id_mapper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,14 +66,14 @@
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\DrugBankID_Mapped" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\KeggID_Original" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\original" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor\original" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\ion_channel\original" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\gpcr\original" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\enzyme\original" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.evaluate_similarity_info">
+  <component name="RunManager" selected="Python.drugbank_kegg_id_mapper">
     <configuration name="blub" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,6 +137,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="drugbank_kegg_id_mapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drugbank_kegg_id_mapper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="evaluate_similarity_info" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,34 +179,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="InteractiveKGE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.drugbank_kegg_id_mapper" />
         <item itemvalue="Python.evaluate_similarity_info" />
         <item itemvalue="Python.create_similarity_info_datasets" />
         <item itemvalue="Python.crop_images_and_create_gif" />
         <item itemvalue="Python.blub" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -511,8 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1683636716444</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)">
+      <created>1685625127449</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1685625127449</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -526,7 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed issue with freezing embeddings" />
     <MESSAGE value="Updated utility scripts" />
     <MESSAGE value="Added more Yamanishi datasets with different thresholds for integrated Similarity Information" />
     <MESSAGE value="Created inverse Yamanishi datasets" />
@@ -551,6 +569,7 @@
     <MESSAGE value="Replaced import statement of mpl_interactions because applications that don't visualize should not deal with it" />
     <MESSAGE value="Added a script that helps to evaluate how useful the injected similarity information is." />
     <MESSAGE value="Updated script that helps to evaluate how useful the injected similarity information is." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated script that helps to evaluate how useful the injected similarity information is." />
+    <MESSAGE value="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)" />
   </component>
 </project>

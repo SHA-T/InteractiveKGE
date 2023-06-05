@@ -6,3 +6,4 @@ matplotlib~=3.5.3
 scipy~=1.10.0
 mpl-interactions
 networkx>=2.8.4
+sparqlwrapper>=2.0.0
