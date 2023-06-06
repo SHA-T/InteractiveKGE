@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)">
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_e.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_gpcr.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_ic.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_nr.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/DrugBankID_Mapped/bind_orfhsa_drug_targetsAll.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_e.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_gpcr.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_ic.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_nr.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Yamanishi/Unsplitted_Data/KeggID_Original/bind_orfhsa_drug_targetsAll.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/drugbank_kegg_id_map.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/drugbank_kegg_id_mapper.py" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added script to map KeggIDs to DrugBankIDs">
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/enzyme_indications.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/gpcr_indications.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/ion_channel_indications.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/nuclear_receptor_indications.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/whole_yamanishi_indications.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/drugs_indications.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/enzyme_side_effects.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/gpcr_side_effects.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/ion_channel_side_effects.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/nuclear_receptor_side_effects.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/whole_yamanishi_side_effects.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/drugs_side_effects.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +54,26 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_similarity_information_top2pct/5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_Indications\OnlyYamanishiDrugs_Indications" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects\OnlyYamanishiDrugs_Indications" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects" />
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_Indications" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\5" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\4" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\3" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\2" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\DrugBankID_Mapped" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\KeggID_Original" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\original" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor\original" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\ion_channel\original" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.drugbank_kegg_id_mapper">
-    <configuration name="blub" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.create_externaldata_datasets">
+    <configuration name="create_externaldata_datasets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -82,11 +81,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blub.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/create_externaldata_datasets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,27 +107,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/create_similarity_info_datasets.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="crop_images_and_create_gif" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="InteractiveKGE" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Work/Live_KGE_Visualization/images_for_gif_v1" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\tsham\Desktop\Work\Live_KGE_Visualization\images_for_gif_v1\crop_images_and_create_gif.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,13 +157,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InteractiveKGE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_external/Drug_SideEffects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_external/Drug_SideEffects/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.create_externaldata_datasets" />
+        <item itemvalue="Python.temp" />
         <item itemvalue="Python.drugbank_kegg_id_mapper" />
         <item itemvalue="Python.evaluate_similarity_info" />
         <item itemvalue="Python.create_similarity_info_datasets" />
-        <item itemvalue="Python.crop_images_and_create_gif" />
-        <item itemvalue="Python.blub" />
       </list>
     </recent_temporary>
   </component>
@@ -527,7 +526,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685625127449</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Added script to map KeggIDs to DrugBankIDs">
+      <created>1685988184493</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1685988184493</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -545,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated utility scripts" />
     <MESSAGE value="Added more Yamanishi datasets with different thresholds for integrated Similarity Information" />
     <MESSAGE value="Created inverse Yamanishi datasets" />
     <MESSAGE value="Updated README.md &amp; relations.dict for inverse datasets" />
@@ -570,6 +575,7 @@
     <MESSAGE value="Added a script that helps to evaluate how useful the injected similarity information is." />
     <MESSAGE value="Updated script that helps to evaluate how useful the injected similarity information is." />
     <MESSAGE value="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)" />
+    <MESSAGE value="Added script to map KeggIDs to DrugBankIDs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added script to map KeggIDs to DrugBankIDs" />
   </component>
 </project>
