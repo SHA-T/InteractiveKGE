@@ -1,38 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added SPARQL-Queries that were used to extract relevant external data">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Upscaled Yamanishi data in the &quot;with_side_effects&quot;-dataset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/SPARQL_Queries.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/KG_Creation_and_Querying/SPARQL_Queries.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/mapping_DII.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/KG_Creation_and_Querying/mapping_DII.ttl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/SPARQL_Queries.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/KG_Creation_and_Querying/SPARQL_Queries.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/mapping_DSI.ttl" beforeDir="false" afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/KG_Creation_and_Querying/mapping_DSI.ttl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/5/train.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/create_externaldata_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_externaldata_datasets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,13 +187,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675702422521</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated README.md">
-      <created>1675883772963</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1675883772963</updated>
     </task>
     <task id="LOCAL-00004" summary="Minor improvements + added Yamanishi dataset + added folder to save extra embeddings as tsv besides the embeddings that are saved in 'models' folder">
       <created>1675893390995</created>
@@ -559,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686097705090</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Upscaled Yamanishi data in the &quot;with_side_effects&quot;-dataset">
+      <created>1686129047697</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1686129047697</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -577,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed bug with freezing pretrained embeddings" />
     <MESSAGE value="Fixed bug with freezing pretrained embeddings (finally)" />
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Updated datasets (Old ones will be deleted soon)" />
@@ -602,6 +573,7 @@
     <MESSAGE value="Created datasets with integrated external data" />
     <MESSAGE value="Updated data_k_fold/yamanishi/README.md (About the data)" />
     <MESSAGE value="Added SPARQL-Queries that were used to extract relevant external data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SPARQL-Queries that were used to extract relevant external data" />
+    <MESSAGE value="Upscaled Yamanishi data in the &quot;with_side_effects&quot;-dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upscaled Yamanishi data in the &quot;with_side_effects&quot;-dataset" />
   </component>
 </project>

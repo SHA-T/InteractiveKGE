@@ -7,15 +7,17 @@ The dictionary files entities.dict and relations.dict in the new directory will 
 
 from distutils.dir_util import copy_tree
 import os
+import shutil
 import pandas as pd
 
 
-EXTERNAL_DATA_TYPE = "side_effects"
-SOURCE_PATH = "../data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects"
+EXTERNAL_DATA_TYPE = "indications"
+SOURCE_PATH = "../data_external/Drug_Indications/OnlyYamanishiDrugs_Indications"
 TARGET_PATH = "../data_k_fold/yamanishi"
 SUB_DATASET_NAMES = ['enzyme', 'ion_channel', 'nuclear_receptor', 'gpcr', 'whole_yamanishi']
+CREATE_POSTTRAIN_SET = True
 NUMBER_OF_FOLDS = 5
-UPSCALING_FACTOR = 10
+UPSAMPLING_FACTOR = 1
 
 
 if __name__ == '__main__':
@@ -54,11 +56,16 @@ if __name__ == '__main__':
             entities_int = entities_int.reset_index(drop=True)
             entities_int.to_csv(f"{new_dir}/{fold}/entities.dict", sep="\t", index=True, header=False)
 
+            # Create posttrain.txt
+            if CREATE_POSTTRAIN_SET:
+                shutil.copyfile(f'{TARGET_PATH}/{sub_dataset}/original/{fold}/train.txt',
+                                f'{TARGET_PATH}/{sub_dataset}/original/{fold}/posttrain.txt')
+
             # Update train.txt
             df_int = pd.read_csv(f'{TARGET_PATH}/{sub_dataset}/original/{fold}/train.txt',
                                  delimiter='\t', names=['head', 'relation', 'tail'])
-            if UPSCALING_FACTOR > 1:
-                df_int = pd.concat([df_int] * int(UPSCALING_FACTOR))
+            if UPSAMPLING_FACTOR > 1:
+                df_int = pd.concat([df_int] * int(UPSAMPLING_FACTOR))
             df_int = pd.concat([df_int, df_ext])
             df_int = df_int.reset_index(drop=True)
             df_int.to_csv(f"{new_dir}/{fold}/train.txt", sep="\t", index=False, header=False)
