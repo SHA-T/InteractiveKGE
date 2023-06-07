@@ -1,59 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Fixed a bug in create_externaldata_datasets.py">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/1/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/2/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/3/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/4/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/5/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/1/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/2/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/3/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/4/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/5/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/1/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/2/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/3/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/4/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/5/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/1/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/2/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/3/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/4/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/5/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/1/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/1/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/1/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/2/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/2/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/2/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/3/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/3/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/3/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/4/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/4/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/4/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/5/entities.dict" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/5/train.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_side_effects/5/train.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/create_externaldata_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_externaldata_datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675702422521</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added relations.dict to Yamanishi data">
-      <created>1678660262593</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1678660262593</updated>
     </task>
     <task id="LOCAL-00009" summary="Fixed a bug">
       <created>1678660398390</created>
@@ -579,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686145345166</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Minor fixes">
+      <created>1686146461591</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1686146461591</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -597,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added some more datasets and removed old datasets" />
     <MESSAGE value="Added Yamanishi enzymes dataset (split threshold = 4)" />
     <MESSAGE value="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings" />
     <MESSAGE value="Added datasets that have k folds in a separate directory called data_k_fold/" />
@@ -622,6 +571,7 @@
     <MESSAGE value="Updated experimental Posttraining feature" />
     <MESSAGE value="Fixed a bug with the automatic detection of mock relations" />
     <MESSAGE value="Fixed a bug in create_externaldata_datasets.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug in create_externaldata_datasets.py" />
+    <MESSAGE value="Minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
   </component>
 </project>

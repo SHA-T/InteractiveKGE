@@ -478,7 +478,7 @@ def main(args, conn):
 
         # Posttraining Loop
         for step in range(init_step, args.max_steps//20):
-            log = kge_model.train_step(kge_model, optimizer, pretrain_iterator, args, pretrain_finished=True)
+            log = kge_model.train_step(kge_model, optimizer, posttrain_iterator, args, pretrain_finished=True)
 
             training_logs.append(log)
 
