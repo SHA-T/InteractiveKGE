@@ -242,9 +242,13 @@ def main(args, conn):
     logging.info('#relation: %d' % nrelation)
 
     if args.do_pretrain:
+        if not os.path.exists(os.path.join(args.data_path, 'pretrain.txt')):
+            raise FileNotFoundError("Pretraining not possible because the data_path does not contain a pretrain.txt")
         pretrain_triples = read_triple(os.path.join(args.data_path, 'pretrain.txt'), entity2id, relation2id)
         logging.info('#train: %d' % len(pretrain_triples))
     if args.do_posttrain:
+        if not os.path.exists(os.path.join(args.data_path, 'posttrain.txt')):
+            raise FileNotFoundError("Posttraining not possible because the data_path does not contain a posttrain.txt")
         posttrain_triples = read_triple(os.path.join(args.data_path, 'posttrain.txt'), entity2id, relation2id)
         logging.info('#train: %d' % len(posttrain_triples))
     train_triples = read_triple(os.path.join(args.data_path, 'train.txt'), entity2id, relation2id)
