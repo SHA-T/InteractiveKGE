@@ -25,7 +25,8 @@ Yamanishi data, and extracting only indications that are connected to at least t
 the according Yamanishi subset.
 
 The "with_side_effects"-set was similarly acquired as the "with_indications"-set, but instead of indications it 
-contains information about the side effects of drugs, that are present in the according Yamanishi subset.
+contains information about the side effects of drugs, that are present in the according Yamanishi subset. Also, because 
+the side effects data is bigger than the indications data, the Yamanishi data was upscaled by 10.
 
 The "with_similarity_information_top`x`pct"-set contains the same $k$ folds as the "original"-set, 
 but with added similarity information to the train set (train.txt). The similarity information is picked from the 

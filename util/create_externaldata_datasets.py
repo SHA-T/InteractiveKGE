@@ -15,6 +15,7 @@ SOURCE_PATH = "../data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects"
 TARGET_PATH = "../data_k_fold/yamanishi"
 SUB_DATASET_NAMES = ['enzyme', 'ion_channel', 'nuclear_receptor', 'gpcr', 'whole_yamanishi']
 NUMBER_OF_FOLDS = 5
+UPSCALING_FACTOR = 10
 
 
 if __name__ == '__main__':
@@ -56,6 +57,8 @@ if __name__ == '__main__':
             # Update train.txt
             df_int = pd.read_csv(f'{TARGET_PATH}/{sub_dataset}/original/{fold}/train.txt',
                                  delimiter='\t', names=['head', 'relation', 'tail'])
+            if UPSCALING_FACTOR > 1:
+                df_int = pd.concat([df_int] * int(UPSCALING_FACTOR))
             df_int = pd.concat([df_int, df_ext])
             df_int = df_int.reset_index(drop=True)
             df_int.to_csv(f"{new_dir}/{fold}/train.txt", sep="\t", index=False, header=False)
