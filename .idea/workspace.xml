@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Added script to map KeggIDs to DrugBankIDs">
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/enzyme_indications.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/gpcr_indications.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/ion_channel_indications.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/nuclear_receptor_indications.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications/whole_yamanishi_indications.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_Indications/drugs_indications.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/enzyme_side_effects.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/gpcr_side_effects.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/ion_channel_side_effects.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/nuclear_receptor_side_effects.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects/whole_yamanishi_side_effects.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_external/Drug_SideEffects/drugs_side_effects.csv" afterDir="false" />
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Created datasets with integrated external data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -533,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685988184493</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Created datasets with integrated external data">
+      <created>1686094876028</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1686094876028</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -551,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added more Yamanishi datasets with different thresholds for integrated Similarity Information" />
     <MESSAGE value="Created inverse Yamanishi datasets" />
     <MESSAGE value="Updated README.md &amp; relations.dict for inverse datasets" />
     <MESSAGE value="Fixed bug with freezing pretrained embeddings" />
@@ -576,6 +571,7 @@
     <MESSAGE value="Updated script that helps to evaluate how useful the injected similarity information is." />
     <MESSAGE value="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)" />
     <MESSAGE value="Added script to map KeggIDs to DrugBankIDs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added script to map KeggIDs to DrugBankIDs" />
+    <MESSAGE value="Created datasets with integrated external data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created datasets with integrated external data" />
   </component>
 </project>
