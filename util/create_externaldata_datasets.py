@@ -9,18 +9,23 @@ from distutils.dir_util import copy_tree
 import os
 import shutil
 import pandas as pd
+import json
 
 
-EXTERNAL_DATA_TYPE = "indications"
-SOURCE_PATH = "../data_external/Drug_Indications/OnlyYamanishiDrugs_Indications"
+EXTERNAL_DATA_TYPE = "side_effects"
+SOURCE_PATH = "../data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects"
 TARGET_PATH = "../data_k_fold/yamanishi"
 SUB_DATASET_NAMES = ['enzyme', 'ion_channel', 'nuclear_receptor', 'gpcr', 'whole_yamanishi']
 CREATE_POSTTRAIN_SET = True
 NUMBER_OF_FOLDS = 5
-UPSAMPLING_FACTOR = 1
+UPSAMPLING_FACTOR = 10
 
 
 if __name__ == '__main__':
+
+    # Load KeggID-to-DrugBankID map
+    with open('drugbank_kegg_id_map.json') as json_file:
+        mapper_dict = json.load(json_file)
 
     for sub_dataset in SUB_DATASET_NAMES:
 
@@ -54,6 +59,7 @@ if __name__ == '__main__':
                                        delimiter='\t', header=None)[1]
             entities_int = pd.concat([entities_int, entities_ext])
             entities_int = entities_int.reset_index(drop=True)
+            entities_int.replace(mapper_dict, inplace=True)
             entities_int.to_csv(f"{new_dir}/{fold}/entities.dict", sep="\t", index=True, header=False)
 
             # Create posttrain.txt

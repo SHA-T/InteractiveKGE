@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated experimental Posttraining feature">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Fixed a bug with the automatic detection of mock relations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/1/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/2/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/3/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/4/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/enzyme/with_indications/5/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/1/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/2/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/3/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/4/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/gpcr/with_indications/5/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/1/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/2/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/3/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/4/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/ion_channel/with_indications/5/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/1/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/2/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/3/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/4/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/nuclear_receptor/with_indications/5/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/1/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/1/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/2/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/2/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/3/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/3/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/4/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/4/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/5/entities.dict" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/whole_yamanishi/with_indications/5/entities.dict" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/create_externaldata_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/create_externaldata_datasets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,13 +210,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675702422521</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updated entities_labels file of Yamanishi dataset (protein = 0, drug = 1)">
-      <created>1675901246717</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1675901246717</updated>
     </task>
     <task id="LOCAL-00007" summary="Created option to do Pretraining (--do_pretrain) to learn semantics for new relations/entities before actual training.">
       <created>1678658559432</created>
@@ -529,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686141593390</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Fixed a bug with the automatic detection of mock relations">
+      <created>1686143635811</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1686143635811</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -547,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated datasets (Old ones will be deleted soon)" />
     <MESSAGE value="Updated entities.dict of new datasets" />
     <MESSAGE value="Added some more datasets and removed old datasets" />
     <MESSAGE value="Added Yamanishi enzymes dataset (split threshold = 4)" />
@@ -572,6 +596,7 @@
     <MESSAGE value="Upscaled Yamanishi data in the &quot;with_side_effects&quot;-dataset" />
     <MESSAGE value="Added experimental Posttraining feature" />
     <MESSAGE value="Updated experimental Posttraining feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated experimental Posttraining feature" />
+    <MESSAGE value="Fixed a bug with the automatic detection of mock relations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug with the automatic detection of mock relations" />
   </component>
 </project>
