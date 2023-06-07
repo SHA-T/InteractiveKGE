@@ -218,8 +218,10 @@ def main(args, conn):
             relation2id[relation] = int(rid)
 
     # Create relation2id dictionary containing only relations present in the pretrain set (mock relations)
-    mock_relations = pd.read_csv(os.path.join(args.data_path, 'pretrain.txt'), sep='\t', header=None)[1].unique()
-    relation2id_mock = {k: relation2id[k] for k in mock_relations}
+    relation2id_mock = None
+    if args.do_pretrain:
+        mock_relations = pd.read_csv(os.path.join(args.data_path, 'pretrain.txt'), sep='\t', header=None)[1].unique()
+        relation2id_mock = {k: relation2id[k] for k in mock_relations}
     
     # Read regions for Countries S* datasets
     if args.countries:
