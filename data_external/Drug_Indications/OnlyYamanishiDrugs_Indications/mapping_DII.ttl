@@ -1,0 +1,215 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix kegg: <https://www.kegg.jp/entry/> .
+@prefix db: <https://go.drugbank.com/drugs/> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@base <https://go.drugbank.com/> .
+
+<DrugEnzyme_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_e.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://go.drugbank.com/drugs/{drug}";
+		rr:class db:drug
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/YamanishiEnzyme";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/Yamanishi";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:interactsWith; 
+		rr:objectMap [
+			rr:template "https://www.kegg.jp/entry/{protein}";
+		]
+	].
+
+
+<Enzyme_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_e.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://www.kegg.jp/entry/{protein}";
+		rr:class kegg:protein
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:instanceOfProteinSubclass; 
+		rr:objectMap [
+			rr:template "https://www.wikidata.org/wiki/Q8047";
+		]
+	].
+
+
+<DrugGPCR_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_gpcr.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://go.drugbank.com/drugs/{drug}";
+		rr:class db:drug
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/YamanishiGPCR";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/Yamanishi";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:interactsWith; 
+		rr:objectMap [
+			rr:template "https://www.kegg.jp/entry/{protein}";
+		]
+	].
+
+
+<GPCR_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_gpcr.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://www.kegg.jp/entry/{protein}";
+		rr:class kegg:protein
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:instanceOfProteinSubclass; 
+		rr:objectMap [
+			rr:template "https://www.wikidata.org/wiki/Q38173";
+		]
+	].
+
+
+<DrugIonChannel_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_ic.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://go.drugbank.com/drugs/{drug}";
+		rr:class db:drug
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/YamanishiIonChannel";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/Yamanishi";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:interactsWith; 
+		rr:objectMap [
+			rr:template "https://www.kegg.jp/entry/{protein}";
+		]
+	].
+
+
+<IonChannel_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_ic.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://www.kegg.jp/entry/{protein}";
+		rr:class kegg:protein
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:instanceOfProteinSubclass; 
+		rr:objectMap [
+			rr:template "https://www.wikidata.org/wiki/Q62536";
+		]
+	].
+
+
+<DrugNuclearReceptor_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_nr.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://go.drugbank.com/drugs/{drug}";
+		rr:class db:drug
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/YamanishiNuclearReceptor";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/Yamanishi";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:interactsWith; 
+		rr:objectMap [
+			rr:template "https://www.kegg.jp/entry/{protein}";
+		]
+	].
+
+
+<NuclearReceptor_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/bind_orfhsa_drug_nr.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://www.kegg.jp/entry/{protein}";
+		rr:class kegg:protein
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:instanceOfProteinSubclass; 
+		rr:objectMap [
+			rr:template "https://www.wikidata.org/wiki/Q422500";
+		]
+	].
+
+
+<DII_TripleMap> a rr:TriplesMap;
+	rml:logicalSource [
+		rml:source "./files/drugs_indications.csv";
+		rml:referenceFormulation ql:CSV
+	];
+	rr:subjectMap [
+		rr:template "https://go.drugbank.com/drugs/{DrugId}";
+		rr:class db:drug
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:fromSource; 
+		rr:objectMap [
+			rr:template "http://example.com/External";
+		]
+	];
+	rr:predicateObjectMap [ 
+		rr:predicate ex:hasIndication; 
+		rr:objectMap [
+			rr:template "http://example.com/{indication_Id}";
+		]
+	].

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Created datasets with integrated external data">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Updated data_k_fold/yamanishi/README.md (About the data)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/data_k_fold/yamanishi/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +42,22 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_external/Drug_Indications/OnlyYamanishiDrugs_Indications" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_external/Drug_SideEffects/OnlyYamanishiDrugs_SideEffects" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects\OnlyYamanishiDrugs_SideEffects" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_Indications\OnlyYamanishiDrugs_Indications" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects\OnlyYamanishiDrugs_Indications" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_Indications" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\with_similarity_information_top2pct\5" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_Indications\OnlyYamanishiDrugs_Indications" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_external\Drug_SideEffects" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\DrugBankID_Mapped" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\KeggID_Original" />
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\whole_yamanishi\original" />
-      <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data_k_fold\yamanishi\nuclear_receptor\original" />
     </key>
   </component>
   <component name="RunManager" selected="Python.create_externaldata_datasets">
@@ -185,13 +184,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675702422521</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added more functionalities (e.g. cmd line args), cleaned the code, updated README.md">
-      <created>1675881548647</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1675881548647</updated>
     </task>
     <task id="LOCAL-00002" summary="Added more functionalities (e.g. cmd line args), cleaned the code, updated README.md">
       <created>1675882047173</created>
@@ -529,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686094876028</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Updated data_k_fold/yamanishi/README.md (About the data)">
+      <created>1686096398060</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1686096398060</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -547,7 +546,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created inverse Yamanishi datasets" />
     <MESSAGE value="Updated README.md &amp; relations.dict for inverse datasets" />
     <MESSAGE value="Fixed bug with freezing pretrained embeddings" />
     <MESSAGE value="Fixed bug with freezing pretrained embeddings (finally)" />
@@ -572,6 +570,7 @@
     <MESSAGE value="Mock relations are now automatically detected, when freezing their relations (Before this change, it was assumed that all relations in the relations.dict file except the first entry are mock relations)" />
     <MESSAGE value="Added script to map KeggIDs to DrugBankIDs" />
     <MESSAGE value="Created datasets with integrated external data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created datasets with integrated external data" />
+    <MESSAGE value="Updated data_k_fold/yamanishi/README.md (About the data)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated data_k_fold/yamanishi/README.md (About the data)" />
   </component>
 </project>
