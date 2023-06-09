@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Minor fixes">
+    <list default="true" id="46646ce9-62ad-47d8-93b4-771001d40864" name="Changes" comment="Fixed a bug with the experimental posttrain feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codes/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/codes/run.py" afterDir="false" />
     </list>
@@ -61,7 +61,7 @@
       <recent name="C:\Users\tsham\Desktop\Github\InteractiveKGE\data\Yamanishi\Unsplitted_Data\DrugBankID_Mapped" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_externaldata_datasets">
+  <component name="RunManager" selected="Python.evaluate_similarity_info">
     <configuration name="create_externaldata_datasets" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="InteractiveKGE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -169,10 +169,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.evaluate_similarity_info" />
         <item itemvalue="Python.create_externaldata_datasets" />
         <item itemvalue="Python.temp" />
         <item itemvalue="Python.drugbank_kegg_id_mapper" />
-        <item itemvalue="Python.evaluate_similarity_info" />
         <item itemvalue="Python.create_similarity_info_datasets" />
       </list>
     </recent_temporary>
@@ -185,13 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675702422521</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Fixed a bug">
-      <created>1678660398390</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1678660398390</updated>
     </task>
     <task id="LOCAL-00010" summary="Fixed tab seperator in pretrain.txt">
       <created>1678661028753</created>
@@ -529,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686146461591</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Fixed a bug with the experimental posttrain feature">
+      <created>1686146683621</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1686146683621</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -547,7 +547,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Yamanishi enzymes dataset (split threshold = 4)" />
     <MESSAGE value="Added more Similarity Information settings for Yamanishi enzyme datasets and removed unnecessary settings" />
     <MESSAGE value="Added datasets that have k folds in a separate directory called data_k_fold/" />
     <MESSAGE value="Added drag-and-drop feature &amp; optimized efficiency for plotting and data transfer between processes" />
@@ -572,6 +571,7 @@
     <MESSAGE value="Fixed a bug with the automatic detection of mock relations" />
     <MESSAGE value="Fixed a bug in create_externaldata_datasets.py" />
     <MESSAGE value="Minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes" />
+    <MESSAGE value="Fixed a bug with the experimental posttrain feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug with the experimental posttrain feature" />
   </component>
 </project>

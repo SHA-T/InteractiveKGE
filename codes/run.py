@@ -21,9 +21,11 @@ from multiprocessing import Process, Pipe
 from collections import deque
 
 import torch
+torch.backends.cudnn.benchmark = True
 torch.manual_seed(42)
 np.random.seed(42)
 random.seed(42)
+torch.cuda.manual_seed(42)
 from torch.utils.data import DataLoader
 
 from model import KGEModel
